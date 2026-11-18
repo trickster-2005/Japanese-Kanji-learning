@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Link, useParams } from "react-router-dom";
+import { WordText } from "../components/Clickable";
 import DictLinks from "../components/DictLinks";
 import { OnList } from "../components/Readings";
 import SourceText from "../components/SourceText";
@@ -122,7 +123,7 @@ export default function KanjiPage() {
         </Row>
         <Row label="聲符字族">
           {series ? (
-            <Link to="/series" className="hover:underline">
+            <Link to={`/series#${series.phonetic}`} className="hover:underline">
               {series.phonetic}（<span lang="ja" className="font-jp">{series.on}</span>）：{series.members.join("、")}
             </Link>
           ) : (
@@ -152,7 +153,7 @@ export default function KanjiPage() {
               return (
                 <li key={w} className="rounded-lg border border-stone-200 p-3 dark:border-stone-700">
                   <div className="flex flex-wrap items-baseline gap-x-3">
-                    <span lang="ja" className="font-jp text-xl">{w}</span>
+                    <WordText w={w} className="text-xl" />
                     <span lang="ja" className="font-jp text-sm text-stone-500">{info?.reading || "讀音待確認"}</span>
                     {info && <span className="text-sm">{info.meaning_zh}</span>}
                   </div>

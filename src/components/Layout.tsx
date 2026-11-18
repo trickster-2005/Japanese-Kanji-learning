@@ -6,7 +6,7 @@ export default function Layout() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="border-b border-amber-200 bg-amber-50 px-4 py-1.5 text-center text-xs text-amber-900 dark:border-amber-800 dark:bg-amber-950/60 dark:text-amber-200">
-        目前收錄 40 個種子字，讀音取自開放資料（出處見各字頁面）。華語拼音、中文釋義、詞彙讀音尚待補充。
+        目前收錄 47 字、25 個詞，讀音都取自開放資料（出處見各頁面）。單字的中文釋義尚待補充。
       </div>
       <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-6">
         <Outlet />

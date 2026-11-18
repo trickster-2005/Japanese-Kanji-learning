@@ -76,12 +76,24 @@ export type WordType =
 
 export interface Word {
   word: string;
+  /** JMdict 的主要讀音 */
   reading: string;
+  /** JMdict 的其他讀音 */
+  alt_readings: string[];
+  /** 日語意思（中文說明，人工編寫） */
   meaning_zh: string;
+  /** JMdict 英文釋義 */
+  gloss_en: string[];
   type: WordType;
   kanji: string[];
   rules: string[];
+  /** 查台語、粵語用的字形，例如「案內」「走」 */
+  zh: string;
+  hokkien: HokkienReadings;
+  /** 只有單字（zh 一個字）時才有 */
+  cantonese: string[];
   note: string;
+  sources: string[];
 }
 
 export type RuleCategory = "聲母" | "韻尾" | "促音" | "讀音層次";

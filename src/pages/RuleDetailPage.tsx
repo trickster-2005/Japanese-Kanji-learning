@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { WordText } from "../components/Clickable";
 import DictLinks from "../components/DictLinks";
 import RuleTable from "../components/RuleTable";
 import SeenButton from "../components/SeenButton";
@@ -12,7 +13,9 @@ export default function RuleDetailPage() {
 
   const members = kanjiByRule(rule.id);
   // 例詞（例如促音規律的「学校」）不是單字，另外列出
-  const exampleWords = rule.examples.filter((e) => [...e].length > 1);
+  const exampleWords = [
+    ...new Set([...rule.examples.filter((e) => [...e].length > 1), ...WORDS.filter((w) => w.rules.includes(rule.id)).map((w) => w.word)]),
+  ];
 
   return (
     <article className="space-y-6">
@@ -48,7 +51,7 @@ export default function RuleDetailPage() {
               const info = WORDS.find((x) => x.word === w);
               return (
                 <li key={w} className="rounded-lg border border-stone-200 p-3 dark:border-stone-700">
-                  <span lang="ja" className="font-jp text-xl">{w}</span>
+                  <WordText w={w} className="text-xl" />
                   <span lang="ja" className="font-jp ml-3 text-sm text-stone-500">
                     {info?.reading || "讀音待確認"}
                   </span>
@@ -57,7 +60,6 @@ export default function RuleDetailPage() {
               );
             })}
           </ul>
-          <p className="text-xs text-stone-500">詞彙讀音需要 JMdict 資料，補上後會自動顯示。</p>
         </section>
       )}
     </article>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { KanjiText } from "../components/Clickable";
 import RuleCard from "../components/RuleCard";
 import { RULES, RULE_CATEGORIES, getKanji } from "../lib/data";
 
@@ -13,7 +14,7 @@ export default function HomePage() {
         <p className="mt-3 leading-relaxed text-stone-700 dark:text-stone-200">
           日語的音讀、台語和粵語的讀音，都是從中古漢語分支出來的。
           以中古漢語為樞紐，你已經會的台語或粵語發音，可以對應出日語漢字的音讀——
-          例如粵語、台語唸 <b>h</b> 的「漢、海、學」，日語唸 <b>k</b>：
+          例如粵語、台語唸 <b>h</b> 的「<KanjiText c="漢" />、<KanjiText c="海" />、<KanjiText c="學" />」，日語唸 <b>k</b>：
           <span lang="ja" className="font-jp">{heroReadings}</span>。
         </p>
         <p className="mt-2 text-sm text-stone-600 dark:text-stone-300">

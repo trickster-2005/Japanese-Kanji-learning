@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useSettings } from "../context/useSettings";
 import { stripTailoTone } from "../lib/romanize";
 import type { Kanji, RuleException } from "../types";
+import { KanjiText } from "./Clickable";
 import { CantoneseList, HokkienList, OnList } from "./Readings";
 
 type SortKey = "char" | "jp" | "yue" | "nan";
@@ -80,10 +80,8 @@ export default function RuleTable({ kanji, exceptions }: Props) {
             return (
               <tr key={k.char} className={`border-t border-stone-200 align-top dark:border-stone-700 ${tone}`}>
                 <td className="px-3 py-2">
-                  <Link to={`/kanji/${encodeURIComponent(k.char)}`} className="hover:underline">
-                    <span lang="ja" className="font-jp text-xl">{k.jp_char}</span>
-                    {k.char !== k.jp_char && <span className="ml-1 text-xs text-stone-500">{k.char}</span>}
-                  </Link>
+                  <KanjiText c={k.char} className="text-xl">{k.jp_char}</KanjiText>
+                  {k.char !== k.jp_char && <span className="ml-1 text-xs text-stone-500">{k.char}</span>}
                 </td>
                 <td className="px-3 py-2">
                   <OnList on={k.on} bad={exc?.readings} />

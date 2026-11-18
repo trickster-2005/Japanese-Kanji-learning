@@ -22,7 +22,7 @@
         "hàn"
       ]
     },
-    "mandarin": "",
+    "mandarin": "hàn",
     "middle_chinese": [
       {
         "initial": "曉",
@@ -52,7 +52,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「漢」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95504999",
-      "粵語：Unicode unihan-database kCantonese（U+6F22）",
+      "粵語：Unicode Unihan kCantonese（U+6F22，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #2642"
     ]
@@ -89,7 +90,7 @@
         "hái"
       ]
     },
-    "mandarin": "",
+    "mandarin": "hǎi",
     "middle_chinese": [
       {
         "initial": "曉",
@@ -118,7 +119,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「海」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95496066",
-      "粵語：Unicode unihan-database kCantonese（U+6D77）",
+      "粵語：Unicode Unihan kCantonese（U+6D77，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1445"
     ]
@@ -156,7 +158,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "xué",
     "middle_chinese": [
       {
         "initial": "匣",
@@ -183,14 +185,16 @@
     "words": [
       "学校",
       "学生",
-      "大学"
+      "大学",
+      "哲学"
     ],
     "notes": "",
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「学」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93647897",
       "新字體對應：KANJIDIC2「学」的 variant 欄位",
-      "粵語：Unicode unihan-database kCantonese（U+5B78）",
+      "粵語：Unicode Unihan kCantonese（U+5B78，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3282"
     ]
@@ -224,7 +228,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "fāng",
     "middle_chinese": [
       {
         "initial": "並",
@@ -262,7 +266,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「方」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92535814",
-      "粵語：Unicode unihan-database kCantonese（U+65B9）",
+      "粵語：Unicode Unihan kCantonese（U+65B9，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #810、#818"
     ]
@@ -290,7 +295,7 @@
         "hok"
       ]
     },
-    "mandarin": "",
+    "mandarin": "fú",
     "middle_chinese": [
       {
         "initial": "幫",
@@ -320,7 +325,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「福」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95379975",
-      "粵語：Unicode unihan-database kCantonese（U+798F）",
+      "粵語：Unicode Unihan kCantonese（U+798F，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3200"
     ]
@@ -368,7 +374,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "fēn",
     "middle_chinese": [
       {
         "initial": "幫",
@@ -414,7 +420,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「分」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92695569",
-      "粵語：Unicode unihan-database kCantonese（U+5206）",
+      "粵語：Unicode Unihan kCantonese（U+5206，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #459、#2589"
     ]
@@ -459,7 +466,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "niú",
     "middle_chinese": [
       {
         "initial": "疑",
@@ -487,7 +494,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「牛」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92691725",
-      "粵語：Unicode unihan-database kCantonese（U+725B）",
+      "粵語：Unicode Unihan kCantonese（U+725B，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #991"
     ]
@@ -531,7 +539,7 @@
         "gûn"
       ]
     },
-    "mandarin": "",
+    "mandarin": "yín",
     "middle_chinese": [
       {
         "initial": "疑",
@@ -558,7 +566,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「銀」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92676255",
-      "粵語：Unicode unihan-database kCantonese（U+9280）",
+      "粵語：Unicode Unihan kCantonese（U+9280，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #423"
     ]
@@ -603,7 +612,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "yǎn",
     "middle_chinese": [
       {
         "initial": "疑",
@@ -630,7 +639,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「眼」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92542047",
-      "粵語：Unicode unihan-database kCantonese（U+773C）",
+      "粵語：Unicode Unihan kCantonese（U+773C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1598"
     ]
@@ -679,7 +689,7 @@
         "bān"
       ]
     },
-    "mandarin": "",
+    "mandarin": "wàn",
     "middle_chinese": [
       {
         "initial": "明",
@@ -708,7 +718,8 @@
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「万」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92199727",
       "新字體對應：KANJIDIC2「万」的 variant 欄位",
-      "粵語：Unicode unihan-database kCantonese（U+842C）",
+      "粵語：Unicode Unihan kCantonese（U+842C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #2599"
     ]
@@ -744,7 +755,7 @@
         "bûn"
       ]
     },
-    "mandarin": "",
+    "mandarin": "wén",
     "middle_chinese": [
       {
         "initial": "明",
@@ -773,12 +784,15 @@
     "jlpt": "",
     "jlpt_old": 3,
     "joyo": true,
-    "words": [],
+    "words": [
+      "注文"
+    ],
     "notes": "",
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「文」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93748235",
-      "粵語：Unicode unihan-database kCantonese（U+6587）",
+      "粵語：Unicode Unihan kCantonese（U+6587，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #455"
     ]
@@ -814,7 +828,7 @@
         "bú"
       ]
     },
-    "mandarin": "",
+    "mandarin": "wǔ",
     "middle_chinese": [
       {
         "initial": "明",
@@ -843,7 +857,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「武」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95605546",
-      "粵語：Unicode unihan-database kCantonese（U+6B66）",
+      "粵語：Unicode Unihan kCantonese（U+6B66，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1355"
     ]
@@ -890,7 +905,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "mǎ",
     "middle_chinese": [
       {
         "initial": "明",
@@ -916,7 +931,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「馬」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95428592",
-      "粵語：Unicode unihan-database kCantonese（U+99AC）",
+      "粵語：Unicode Unihan kCantonese（U+99AC，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1764"
     ]
@@ -953,7 +969,7 @@
         "ji̍t"
       ]
     },
-    "mandarin": "",
+    "mandarin": "rì",
     "middle_chinese": [
       {
         "initial": "日",
@@ -985,7 +1001,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「日」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93408319",
-      "粵語：Unicode unihan-database kCantonese（U+65E5）",
+      "粵語：Unicode Unihan kCantonese（U+65E5，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3286"
     ]
@@ -1022,7 +1039,7 @@
         "jîn"
       ]
     },
-    "mandarin": "",
+    "mandarin": "rén",
     "middle_chinese": [
       {
         "initial": "日",
@@ -1050,7 +1067,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「人」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95663781",
-      "粵語：Unicode unihan-database kCantonese（U+4EBA）",
+      "粵語：Unicode Unihan kCantonese（U+4EBA，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #406"
     ]
@@ -1087,7 +1105,7 @@
         "jī"
       ]
     },
-    "mandarin": "",
+    "mandarin": "èr",
     "middle_chinese": [
       {
         "initial": "日",
@@ -1114,7 +1132,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「二」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95452781",
-      "粵語：Unicode unihan-database kCantonese（U+4E8C）",
+      "粵語：Unicode Unihan kCantonese（U+4E8C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #2226"
     ]
@@ -1157,7 +1176,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "zhōng",
     "middle_chinese": [
       {
         "initial": "知",
@@ -1197,7 +1216,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「中」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95496625",
-      "粵語：Unicode unihan-database kCantonese（U+4E2D）",
+      "粵語：Unicode Unihan kCantonese（U+4E2D，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3、#2112"
     ]
@@ -1236,7 +1256,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "zhú",
     "middle_chinese": [
       {
         "initial": "知",
@@ -1263,7 +1283,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「竹」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95660205",
-      "粵語：Unicode unihan-database kCantonese（U+7AF9）",
+      "粵語：Unicode Unihan kCantonese（U+7AF9，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3216"
     ]
@@ -1312,7 +1333,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "chá",
     "middle_chinese": [
       {
         "initial": "澄",
@@ -1338,7 +1359,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「茶」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92201515",
-      "粵語：Unicode unihan-database kCantonese（U+8336）",
+      "粵語：Unicode Unihan kCantonese（U+8336，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #787"
     ]
@@ -1385,7 +1407,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "liù",
     "middle_chinese": [
       {
         "initial": "來",
@@ -1411,7 +1433,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「六」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95667313",
-      "粵語：Unicode unihan-database kCantonese（U+516D）",
+      "粵語：Unicode Unihan kCantonese（U+516D，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3203"
     ]
@@ -1468,7 +1491,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "shí",
     "middle_chinese": [
       {
         "initial": "常",
@@ -1494,7 +1517,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「石」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92618269",
-      "粵語：Unicode unihan-database kCantonese（U+77F3）",
+      "粵語：Unicode Unihan kCantonese（U+77F3，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3655"
     ]
@@ -1537,7 +1561,7 @@
         "it"
       ]
     },
-    "mandarin": "",
+    "mandarin": "yī",
     "middle_chinese": [
       {
         "initial": "影",
@@ -1566,7 +1590,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「一」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95452839",
-      "粵語：Unicode unihan-database kCantonese（U+4E00）",
+      "粵語：Unicode Unihan kCantonese（U+4E00，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3290"
     ]
@@ -1608,7 +1633,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "bā",
     "middle_chinese": [
       {
         "initial": "幫",
@@ -1635,7 +1660,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「八」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92707648",
-      "粵語：Unicode unihan-database kCantonese（U+516B）",
+      "粵語：Unicode Unihan kCantonese（U+516B，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3430"
     ]
@@ -1687,7 +1713,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "shí",
     "middle_chinese": [
       {
         "initial": "常",
@@ -1713,7 +1739,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「十」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95667284",
-      "粵語：Unicode unihan-database kCantonese（U+5341）",
+      "粵語：Unicode Unihan kCantonese（U+5341，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3747"
     ]
@@ -1767,7 +1794,7 @@
         "ji̍p"
       ]
     },
-    "mandarin": "",
+    "mandarin": "rù",
     "middle_chinese": [
       {
         "initial": "日",
@@ -1795,7 +1822,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「入」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93139744",
-      "粵語：Unicode unihan-database kCantonese（U+5165）",
+      "粵語：Unicode Unihan kCantonese（U+5165，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3751"
     ]
@@ -1833,7 +1861,7 @@
         "kip"
       ]
     },
-    "mandarin": "",
+    "mandarin": "jí",
     "middle_chinese": [
       {
         "initial": "見",
@@ -1862,7 +1890,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「急」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93383960",
-      "粵語：Unicode unihan-database kCantonese（U+6025）",
+      "粵語：Unicode Unihan kCantonese（U+6025，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3759"
     ]
@@ -1900,7 +1929,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "sān",
     "middle_chinese": [
       {
         "initial": "心",
@@ -1933,7 +1962,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「三」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95667364",
-      "粵語：Unicode unihan-database kCantonese（U+4E09）",
+      "粵語：Unicode Unihan kCantonese（U+4E09，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1090、#3127"
     ]
@@ -1964,7 +1994,7 @@
         "sim"
       ]
     },
-    "mandarin": "",
+    "mandarin": "xīn",
     "middle_chinese": [
       {
         "initial": "心",
@@ -1993,7 +2023,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「心」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93404553",
-      "粵語：Unicode unihan-database kCantonese（U+5FC3）",
+      "粵語：Unicode Unihan kCantonese（U+5FC3，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1056"
     ]
@@ -2030,7 +2061,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "shān",
     "middle_chinese": [
       {
         "initial": "生",
@@ -2056,7 +2087,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「山」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93648109",
-      "粵語：Unicode unihan-database kCantonese（U+5C71）",
+      "粵語：Unicode Unihan kCantonese（U+5C71，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #554"
     ]
@@ -2101,7 +2133,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "dōng",
     "middle_chinese": [
       {
         "initial": "端",
@@ -2129,7 +2161,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「東」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95496489",
-      "粵語：Unicode unihan-database kCantonese（U+6771）",
+      "粵語：Unicode Unihan kCantonese（U+6771，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1"
     ]
@@ -2163,7 +2196,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "guāng",
     "middle_chinese": [
       {
         "initial": "見",
@@ -2197,7 +2230,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「光」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95440088",
-      "粵語：Unicode unihan-database kCantonese（U+5149）",
+      "粵語：Unicode Unihan kCantonese（U+5149，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #846、#2941"
     ]
@@ -2261,7 +2295,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "shēng",
     "middle_chinese": [
       {
         "initial": "生",
@@ -2298,7 +2332,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「生」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95454542",
-      "粵語：Unicode unihan-database kCantonese（U+751F）",
+      "粵語：Unicode Unihan kCantonese（U+751F，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #884、#2964"
     ]
@@ -2341,7 +2376,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "jīng",
     "middle_chinese": [
       {
         "initial": "見",
@@ -2370,7 +2405,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「京」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93756604",
-      "粵語：Unicode unihan-database kCantonese（U+4EAC）",
+      "粵語：Unicode Unihan kCantonese（U+4EAC，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #876"
     ]
@@ -2411,7 +2447,7 @@
         "kàu"
       ]
     },
-    "mandarin": "",
+    "mandarin": "xiào",
     "middle_chinese": [
       {
         "initial": "匣",
@@ -2450,7 +2486,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「校」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=90028528",
-      "粵語：Unicode unihan-database kCantonese（U+6821）",
+      "粵語：Unicode Unihan kCantonese（U+6821，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #2790、#2791"
     ]
@@ -2494,7 +2531,7 @@
         "tsa̍p"
       ]
     },
-    "mandarin": "",
+    "mandarin": "zá",
     "middle_chinese": [
       {
         "initial": "從",
@@ -2523,7 +2560,8 @@
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「雑」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93648097",
       "新字體對應：KANJIDIC2「雑」的 variant 欄位",
-      "粵語：Unicode unihan-database kCantonese（U+96DC）",
+      "粵語：Unicode Unihan kCantonese（U+96DC，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #3782"
     ]
@@ -2551,7 +2589,7 @@
         "tsì"
       ]
     },
-    "mandarin": "",
+    "mandarin": "zhì",
     "middle_chinese": [
       {
         "initial": "章",
@@ -2578,7 +2616,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「誌」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95421815",
-      "粵語：Unicode unihan-database kCantonese（U+8A8C）",
+      "粵語：Unicode Unihan kCantonese（U+8A8C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #2251"
     ]
@@ -2613,7 +2652,7 @@
         "kòo"
       ]
     },
-    "mandarin": "",
+    "mandarin": "gè",
     "middle_chinese": [
       {
         "initial": "見",
@@ -2640,7 +2679,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「個」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95667298",
-      "粵語：Unicode unihan-database kCantonese（U+500B）",
+      "粵語：Unicode Unihan kCantonese（U+500B，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #2825"
     ]
@@ -2672,7 +2712,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "běn",
     "middle_chinese": [
       {
         "initial": "幫",
@@ -2706,7 +2746,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「本」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93803440",
-      "粵語：Unicode unihan-database kCantonese（U+672C）",
+      "粵語：Unicode Unihan kCantonese（U+672C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1533"
     ]
@@ -2758,7 +2799,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "míng",
     "middle_chinese": [
       {
         "initial": "明",
@@ -2787,7 +2828,8 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「明」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93411198",
-      "粵語：Unicode unihan-database kCantonese（U+660E）",
+      "粵語：Unicode Unihan kCantonese（U+660E，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #877"
     ]
@@ -2854,7 +2896,7 @@
       ],
       "unmarked": []
     },
-    "mandarin": "",
+    "mandarin": "xíng",
     "middle_chinese": [
       {
         "initial": "匣",
@@ -2910,9 +2952,551 @@
     "sources": [
       "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
       "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「行」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95617319",
-      "粵語：Unicode unihan-database kCantonese（U+884C）",
+      "粵語：Unicode Unihan kCantonese（U+884C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
       "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
       "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #852、#887、#2927、#2957"
+    ]
+  },
+  {
+    "char": "青",
+    "jp_char": "青",
+    "on": [
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      },
+      {
+        "kana": "しょう",
+        "layers": [
+          "吳音"
+        ]
+      },
+      {
+        "kana": "しい",
+        "layers": [
+          "宋音"
+        ],
+        "extra": true
+      }
+    ],
+    "kun": [
+      "あお",
+      "あお-",
+      "あお.い"
+    ],
+    "cantonese": [
+      "cing1"
+    ],
+    "hokkien": {
+      "literary": [
+        "tshing"
+      ],
+      "colloquial": [
+        "tshenn",
+        "tshinn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "qīng",
+    "middle_chinese": [
+      {
+        "initial": "清",
+        "rhyme": "青",
+        "tone": "平",
+        "status": "清開四青平",
+        "fanqie": "倉經"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "blue",
+      "green"
+    ],
+    "jlpt": "",
+    "jlpt_old": 3,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「青」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=95607241",
+      "粵語：Unicode Unihan kCantonese（U+9752，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #931"
+    ]
+  },
+  {
+    "char": "清",
+    "jp_char": "清",
+    "on": [
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      },
+      {
+        "kana": "しょう",
+        "layers": [
+          "吳音"
+        ]
+      },
+      {
+        "kana": "しん",
+        "layers": [
+          "唐音"
+        ]
+      }
+    ],
+    "kun": [
+      "きよ.い",
+      "きよ.まる",
+      "きよ.める"
+    ],
+    "cantonese": [
+      "cing1"
+    ],
+    "hokkien": {
+      "literary": [
+        "tshing"
+      ],
+      "colloquial": [
+        "tshinn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "qīng",
+    "middle_chinese": [
+      {
+        "initial": "清",
+        "rhyme": "清",
+        "tone": "平",
+        "status": "清開三清平",
+        "fanqie": "七情"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "pure",
+      "purify",
+      "cleanse",
+      "exorcise",
+      "Manchu dynasty"
+    ],
+    "jlpt": "",
+    "jlpt_old": 2,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「清」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93457493",
+      "粵語：Unicode Unihan kCantonese（U+6E05，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #908"
+    ]
+  },
+  {
+    "char": "晴",
+    "jp_char": "晴",
+    "on": [
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      },
+      {
+        "kana": "しょう",
+        "layers": [
+          "吳音"
+        ],
+        "extra": true
+      },
+      {
+        "kana": "じょう",
+        "layers": [
+          "吳音"
+        ],
+        "extra": true
+      }
+    ],
+    "kun": [
+      "は.れる",
+      "は.れ",
+      "は.れ-",
+      "-ば.れ",
+      "は.らす"
+    ],
+    "cantonese": [
+      "cing4"
+    ],
+    "hokkien": {
+      "literary": [
+        "tsîng"
+      ],
+      "colloquial": [
+        "tsênn",
+        "tsînn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "qíng",
+    "middle_chinese": [
+      {
+        "initial": "從",
+        "rhyme": "清",
+        "tone": "平",
+        "status": "從開三清平",
+        "fanqie": "疾盈"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "clear up"
+    ],
+    "jlpt": "",
+    "jlpt_old": 2,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「晴」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92200676",
+      "粵語：Unicode Unihan kCantonese（U+6674，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #909"
+    ]
+  },
+  {
+    "char": "精",
+    "jp_char": "精",
+    "on": [
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      },
+      {
+        "kana": "しょう",
+        "layers": [
+          "吳音"
+        ]
+      }
+    ],
+    "kun": [
+      "しら.げる",
+      "くわ.しい"
+    ],
+    "cantonese": [
+      "zing1"
+    ],
+    "hokkien": {
+      "literary": [
+        "tsing"
+      ],
+      "colloquial": [
+        "tsiann",
+        "tsinn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "jīng",
+    "middle_chinese": [
+      {
+        "initial": "精",
+        "rhyme": "清",
+        "tone": "平",
+        "status": "精開三清平",
+        "fanqie": "子盈"
+      },
+      {
+        "initial": "精",
+        "rhyme": "勁",
+        "tone": "去",
+        "status": "精開三清去",
+        "fanqie": "子姓"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "refined",
+      "ghost",
+      "fairy",
+      "energy",
+      "vitality",
+      "semen",
+      "excellence",
+      "purity",
+      "skill"
+    ],
+    "jlpt": "",
+    "jlpt_old": 2,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「精」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92917782",
+      "粵語：Unicode Unihan kCantonese（U+7CBE，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #910、#2992"
+    ]
+  },
+  {
+    "char": "請",
+    "jp_char": "請",
+    "on": [
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      },
+      {
+        "kana": "しん",
+        "layers": [
+          "唐音"
+        ]
+      },
+      {
+        "kana": "しょう",
+        "layers": [
+          "吳音"
+        ]
+      },
+      {
+        "kana": "じょう",
+        "layers": [
+          "吳音"
+        ],
+        "extra": true
+      }
+    ],
+    "kun": [
+      "こ.う",
+      "う.ける"
+    ],
+    "cantonese": [
+      "cing2"
+    ],
+    "hokkien": {
+      "literary": [
+        "tshíng"
+      ],
+      "colloquial": [
+        "tshiánn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "qǐng",
+    "middle_chinese": [
+      {
+        "initial": "從",
+        "rhyme": "清",
+        "tone": "平",
+        "status": "從開三清平",
+        "fanqie": "疾盈"
+      },
+      {
+        "initial": "清",
+        "rhyme": "靜",
+        "tone": "上",
+        "status": "清開三清上",
+        "fanqie": "七靜"
+      },
+      {
+        "initial": "從",
+        "rhyme": "勁",
+        "tone": "去",
+        "status": "從開三清去",
+        "fanqie": "疾政"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "solicit",
+      "invite",
+      "ask"
+    ],
+    "jlpt": "",
+    "jlpt_old": 1,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「請」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=93741451",
+      "粵語：Unicode Unihan kCantonese（U+8ACB，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #909、#1894、#2987"
+    ]
+  },
+  {
+    "char": "情",
+    "jp_char": "情",
+    "on": [
+      {
+        "kana": "じょう",
+        "layers": [
+          "吳音"
+        ]
+      },
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      }
+    ],
+    "kun": [
+      "なさ.け"
+    ],
+    "cantonese": [
+      "cing4"
+    ],
+    "hokkien": {
+      "literary": [
+        "tsîng"
+      ],
+      "colloquial": [
+        "tsiânn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "qíng",
+    "middle_chinese": [
+      {
+        "initial": "從",
+        "rhyme": "清",
+        "tone": "平",
+        "status": "從開三清平",
+        "fanqie": "疾盈"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "feelings",
+      "emotion",
+      "passion",
+      "sympathy",
+      "circumstances",
+      "facts"
+    ],
+    "jlpt": "",
+    "jlpt_old": 2,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「情」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92737764",
+      "粵語：Unicode Unihan kCantonese（U+60C5，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #909"
+    ]
+  },
+  {
+    "char": "靜",
+    "jp_char": "静",
+    "on": [
+      {
+        "kana": "せい",
+        "layers": [
+          "漢音"
+        ]
+      },
+      {
+        "kana": "じょう",
+        "layers": [
+          "吳音"
+        ]
+      }
+    ],
+    "kun": [
+      "しず-",
+      "しず.か",
+      "しず.まる",
+      "しず.める"
+    ],
+    "cantonese": [
+      "zing6"
+    ],
+    "hokkien": {
+      "literary": [
+        "tsīng"
+      ],
+      "colloquial": [
+        "tsēnn",
+        "tsīnn"
+      ],
+      "unmarked": []
+    },
+    "mandarin": "jìng",
+    "middle_chinese": [
+      {
+        "initial": "從",
+        "rhyme": "靜",
+        "tone": "上",
+        "status": "從開三清上",
+        "fanqie": "疾郢"
+      }
+    ],
+    "phonetic_series": "青",
+    "rules": [
+      "coda-ng"
+    ],
+    "meaning_zh": "",
+    "meaning_en": [
+      "quiet"
+    ],
+    "jlpt": "",
+    "jlpt_old": 2,
+    "joyo": true,
+    "words": [],
+    "notes": "",
+    "sources": [
+      "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（2020-250）",
+      "讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「静」{{ja-readings}}，CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid=92163198",
+      "新字體對應：KANJIDIC2「静」的 variant 欄位",
+      "粵語：Unicode Unihan kCantonese（U+975C，2026-07-31）",
+      "華語：Unicode Unihan kMandarin（2026-07-31）",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」",
+      "中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 #1882"
     ]
   }
 ]

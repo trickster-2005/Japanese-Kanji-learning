@@ -1,146 +1,736 @@
 [
   {
     "word": "学校",
-    "reading": "",
+    "reading": "がっこう",
+    "alt_readings": [],
     "meaning_zh": "學校",
+    "gloss_en": [
+      "school"
+    ],
     "type": "same",
     "kanji": [
       "学",
       "校"
     ],
-    "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "rules": [
+      "sokuon"
+    ],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1206730"
+    ]
   },
   {
     "word": "学生",
-    "reading": "",
+    "reading": "がくせい",
+    "alt_readings": [],
     "meaning_zh": "學生",
+    "gloss_en": [
+      "student (esp. a university student)"
+    ],
     "type": "same",
     "kanji": [
       "学",
       "生"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1206900"
+    ]
   },
   {
     "word": "大学",
-    "reading": "",
+    "reading": "だいがく",
+    "alt_readings": [],
     "meaning_zh": "大學",
+    "gloss_en": [
+      "university",
+      "college"
+    ],
     "type": "same",
     "kanji": [
       "大",
       "学"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1413240"
+    ]
   },
   {
     "word": "漢字",
-    "reading": "",
+    "reading": "かんじ",
+    "alt_readings": [],
     "meaning_zh": "漢字",
+    "gloss_en": [
+      "kanji",
+      "Chinese character"
+    ],
     "type": "same",
     "kanji": [
       "漢",
       "字"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1213170"
+    ]
   },
   {
     "word": "海外",
-    "reading": "",
+    "reading": "かいがい",
+    "alt_readings": [],
     "meaning_zh": "海外；國外",
+    "gloss_en": [
+      "foreign",
+      "abroad",
+      "overseas"
+    ],
     "type": "same",
     "kanji": [
       "海",
       "外"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1201260"
+    ]
   },
   {
     "word": "方法",
-    "reading": "",
+    "reading": "ほうほう",
+    "alt_readings": [],
     "meaning_zh": "方法",
+    "gloss_en": [
+      "method",
+      "way",
+      "manner"
+    ],
     "type": "same",
     "kanji": [
       "方",
       "法"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1517090"
+    ]
   },
   {
     "word": "牛肉",
-    "reading": "",
+    "reading": "ぎゅうにく",
+    "alt_readings": [],
     "meaning_zh": "牛肉",
+    "gloss_en": [
+      "beef"
+    ],
     "type": "same",
     "kanji": [
       "牛",
       "肉"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1231580"
+    ]
   },
   {
     "word": "日本",
-    "reading": "",
+    "reading": "にほん",
+    "alt_readings": [
+      "にっぽん"
+    ],
     "meaning_zh": "日本",
+    "gloss_en": [
+      "Japan"
+    ],
     "type": "same",
     "kanji": [
       "日",
       "本"
     ],
-    "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "rules": [
+      "sokuon"
+    ],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1582710"
+    ]
   },
   {
     "word": "中国",
-    "reading": "",
+    "reading": "ちゅうごく",
+    "alt_readings": [
+      "ちゅうこく"
+    ],
     "meaning_zh": "中國",
+    "gloss_en": [
+      "China"
+    ],
     "type": "same",
     "kanji": [
       "中",
       "国"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1424270"
+    ]
   },
   {
     "word": "東京",
-    "reading": "",
+    "reading": "とうきょう",
+    "alt_readings": [
+      "とうけい"
+    ],
     "meaning_zh": "東京",
+    "gloss_en": [
+      "Tokyo"
+    ],
     "type": "same",
     "kanji": [
       "東",
       "京"
     ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1447690"
+    ]
   },
   {
     "word": "雑誌",
-    "reading": "",
+    "reading": "ざっし",
+    "alt_readings": [],
     "meaning_zh": "雜誌",
+    "gloss_en": [
+      "magazine",
+      "journal",
+      "periodical"
+    ],
     "type": "same",
     "kanji": [
       "雑",
       "誌"
     ],
-    "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "rules": [
+      "sokuon"
+    ],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1299400"
+    ]
   },
   {
     "word": "一個",
-    "reading": "",
+    "reading": "いっこ",
+    "alt_readings": [],
     "meaning_zh": "一個",
+    "gloss_en": [
+      "one (thing)",
+      "one piece",
+      "one item"
+    ],
     "type": "same",
     "kanji": [
       "一",
       "個"
     ],
+    "rules": [
+      "sokuon"
+    ],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1162290"
+    ]
+  },
+  {
+    "word": "勉強",
+    "reading": "べんきょう",
+    "alt_readings": [],
+    "meaning_zh": "讀書、學習",
+    "gloss_en": [
+      "study"
+    ],
+    "type": "false_friend",
+    "kanji": [
+      "勉",
+      "強"
+    ],
     "rules": [],
-    "note": "讀音待 JMdict 資料補上。"
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "華語的「勉強」是不情願、能力不足還硬做的意思。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1512670"
+    ]
+  },
+  {
+    "word": "手紙",
+    "reading": "てがみ",
+    "alt_readings": [],
+    "meaning_zh": "信、書信",
+    "gloss_en": [
+      "letter",
+      "note"
+    ],
+    "type": "false_friend",
+    "kanji": [
+      "手",
+      "紙"
+    ],
+    "rules": [],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "華語的「手紙」指衛生紙。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1327720"
+    ]
+  },
+  {
+    "word": "大丈夫",
+    "reading": "だいじょうぶ",
+    "alt_readings": [
+      "だいじょぶ",
+      "だいじょーぶ"
+    ],
+    "meaning_zh": "沒問題、不要緊",
+    "gloss_en": [
+      "safe",
+      "secure",
+      "sound"
+    ],
+    "type": "false_friend",
+    "kanji": [
+      "大",
+      "丈",
+      "夫"
+    ],
+    "rules": [],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "華語的「大丈夫」指有氣概的男子。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1414150"
+    ]
+  },
+  {
+    "word": "哲学",
+    "reading": "てつがく",
+    "alt_readings": [],
+    "meaning_zh": "哲學",
+    "gloss_en": [
+      "philosophy"
+    ],
+    "type": "wasei",
+    "kanji": [
+      "哲",
+      "学"
+    ],
+    "rules": [],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "明治時期日本學者為翻譯西方概念所造的詞，後來傳入中文。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1437610"
+    ]
+  },
+  {
+    "word": "野球",
+    "reading": "やきゅう",
+    "alt_readings": [],
+    "meaning_zh": "棒球",
+    "gloss_en": [
+      "baseball"
+    ],
+    "type": "wasei",
+    "kanji": [
+      "野",
+      "球"
+    ],
+    "rules": [],
+    "zh": "",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": []
+    },
+    "cantonese": [],
+    "note": "日本造的詞；華語說「棒球」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1537300"
+    ]
+  },
+  {
+    "word": "案内",
+    "reading": "あんない",
+    "alt_readings": [
+      "あない"
+    ],
+    "meaning_zh": "引導、帶路、介紹",
+    "gloss_en": [
+      "guidance",
+      "leading (the way)",
+      "showing around"
+    ],
+    "type": "taigi_shared",
+    "kanji": [
+      "案",
+      "内"
+    ],
+    "rules": [],
+    "zh": "案內",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": [
+        "àn-nāi"
+      ]
+    },
+    "cantonese": [],
+    "note": "台語也說「案內」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1154860",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「案內」"
+    ]
+  },
+  {
+    "word": "注文",
+    "reading": "ちゅうもん",
+    "alt_readings": [],
+    "meaning_zh": "訂購、下訂單",
+    "gloss_en": [
+      "order (for an item)"
+    ],
+    "type": "taigi_shared",
+    "kanji": [
+      "注",
+      "文"
+    ],
+    "rules": [],
+    "zh": "注文",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": [
+        "tsù-bûn"
+      ]
+    },
+    "cantonese": [],
+    "note": "台語也說「注文」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1426650",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「注文」"
+    ]
+  },
+  {
+    "word": "出張",
+    "reading": "しゅっちょう",
+    "alt_readings": [],
+    "meaning_zh": "出差",
+    "gloss_en": [
+      "business trip",
+      "official trip"
+    ],
+    "type": "taigi_shared",
+    "kanji": [
+      "出",
+      "張"
+    ],
+    "rules": [
+      "sokuon"
+    ],
+    "zh": "出張",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": [
+        "tshut-tiunn"
+      ]
+    },
+    "cantonese": [],
+    "note": "台語也說「出張」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1339660",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「出張」"
+    ]
+  },
+  {
+    "word": "走る",
+    "reading": "はしる",
+    "alt_readings": [],
+    "meaning_zh": "跑",
+    "gloss_en": [
+      "to run"
+    ],
+    "type": "old_meaning",
+    "kanji": [
+      "走"
+    ],
+    "rules": [],
+    "zh": "走",
+    "hokkien": {
+      "literary": [
+        "tsóo"
+      ],
+      "colloquial": [
+        "tsáu"
+      ],
+      "unmarked": []
+    },
+    "cantonese": [
+      "zau2"
+    ],
+    "note": "台語、粵語的「走」也是跑；華語的「走」是步行。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1402540",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「走」",
+      "粵語：Unicode Unihan kCantonese（U+8D70，2026-07-31）"
+    ]
+  },
+  {
+    "word": "食う",
+    "reading": "くう",
+    "alt_readings": [],
+    "meaning_zh": "吃（較口語、粗魯；一般說「食べる」）",
+    "gloss_en": [
+      "to eat"
+    ],
+    "type": "old_meaning",
+    "kanji": [
+      "食"
+    ],
+    "rules": [],
+    "zh": "食",
+    "hokkien": {
+      "literary": [
+        "si̍t"
+      ],
+      "colloquial": [
+        "tsia̍h"
+      ],
+      "unmarked": []
+    },
+    "cantonese": [
+      "sik6"
+    ],
+    "note": "台語、粵語都用「食」表示吃；華語說「吃」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1592100",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「食」",
+      "粵語：Unicode Unihan kCantonese（U+98DF，2026-07-31）"
+    ]
+  },
+  {
+    "word": "寒い",
+    "reading": "さむい",
+    "alt_readings": [
+      "さぶい"
+    ],
+    "meaning_zh": "（天氣）冷",
+    "gloss_en": [
+      "cold (e.g. weather)"
+    ],
+    "type": "old_meaning",
+    "kanji": [
+      "寒"
+    ],
+    "rules": [],
+    "zh": "寒",
+    "hokkien": {
+      "literary": [
+        "hân"
+      ],
+      "colloquial": [
+        "kuânn"
+      ],
+      "unmarked": [
+        "gân"
+      ]
+    },
+    "cantonese": [
+      "hon4"
+    ],
+    "note": "台語的「寒」就是天氣冷；華語口語說「冷」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1210360",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「寒」",
+      "粵語：Unicode Unihan kCantonese（U+5BD2，2026-07-31）"
+    ]
+  },
+  {
+    "word": "細かい",
+    "reading": "こまかい",
+    "alt_readings": [],
+    "meaning_zh": "細小、瑣碎",
+    "gloss_en": [
+      "small"
+    ],
+    "type": "old_meaning",
+    "kanji": [
+      "細"
+    ],
+    "rules": [],
+    "zh": "細",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": [
+        "sè",
+        "suè"
+      ]
+    },
+    "cantonese": [
+      "sai3"
+    ],
+    "note": "台語、粵語的「細」是「小」的意思；華語的「細」多指細長、細緻。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1295530",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「細」",
+      "粵語：Unicode Unihan kCantonese（U+7D30，2026-07-31）"
+    ]
+  },
+  {
+    "word": "箸",
+    "reading": "はし",
+    "alt_readings": [],
+    "meaning_zh": "筷子",
+    "gloss_en": [
+      "chopsticks"
+    ],
+    "type": "old_meaning",
+    "kanji": [
+      "箸"
+    ],
+    "rules": [],
+    "zh": "箸",
+    "hokkien": {
+      "literary": [],
+      "colloquial": [],
+      "unmarked": [
+        "tī",
+        "tū"
+      ]
+    },
+    "cantonese": [
+      "zyu6"
+    ],
+    "note": "台語也用「箸」指筷子；華語說「筷子」。",
+    "sources": [
+      "讀音、英文釋義：JMdict（）詞條 #1476410",
+      "台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「箸」",
+      "粵語：Unicode Unihan kCantonese（U+7BB8，2026-07-31）"
+    ]
   }
 ]

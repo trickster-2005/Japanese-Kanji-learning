@@ -1,4 +1,5 @@
 import { Link, useSearchParams } from "react-router-dom";
+import { WordText } from "../components/Clickable";
 import DictLinks from "../components/DictLinks";
 import KanjiLink from "../components/KanjiLink";
 import { search } from "../lib/data";
@@ -29,7 +30,7 @@ export default function SearchPage() {
           <ul className="space-y-2">
             {words.map((w) => (
               <li key={w.word} className="rounded-lg border border-stone-200 p-3 dark:border-stone-700">
-                <span lang="ja" className="font-jp text-lg">{w.word}</span>
+                <WordText w={w.word} className="text-lg" />
                 <span lang="ja" className="font-jp ml-2 text-sm text-stone-500">{w.reading}</span>
                 <span className="ml-2 text-sm">{w.meaning_zh}</span>
                 <div className="mt-2"><DictLinks q={w.word} type="word" /></div>

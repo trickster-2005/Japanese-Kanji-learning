@@ -20,7 +20,7 @@ npm run build    # 產生 dist/，可直接部署到 GitHub Pages 或 Vercel
 
 - [x] 階段 1：專案骨架、路由、版面、`dictionaries.ts`、`<DictLinks>`、10 字示範資料
 - [x] 階段 2：規律詳細頁對照表（可排序、例外標色）、40 字有出處的種子資料
-- [ ] 階段 3：詞彙頁、聲符字族頁、全站點擊彈窗
+- [x] 階段 3：詞彙頁（依類型篩選）、聲符字族頁、全站點擊彈窗
 - [ ] 階段 4：反查推測器、閱讀模式
 - [ ] 階段 5：`/scripts` 資料擴充腳本
 
@@ -33,7 +33,11 @@ python -X utf8 scripts/fetch_wiktionary_readings.py   # 抓讀音層次，存到
 python -X utf8 scripts/build_seed.py
 ```
 
-會產生 `src/data/kanji.json`，並重新計算 `src/data/rules.json` 的例外字。
+會產生 `src/data/kanji.json`、`words.json`、`series.json`，並重新計算 `rules.json` 的例外字。
+
+人工編輯的內容放在兩個檔案，**裡面只有字形、分類與中文說明，不寫任何讀音**：
+- `scripts/words_source.json`：詞彙清單、類型（免學／假朋友／和製漢語／台日共有／古義保留）、中文意思與說明
+- `scripts/series_source.json`：聲符與成員；共同音讀由腳本依 KANJIDIC2 計算
 腳本直接讀壓縮檔，不需要先解壓縮。查不到的欄位一律留空，畫面上顯示「待確認」。
 
 ### 規律與例外怎麼判斷
@@ -63,14 +67,15 @@ python -X utf8 scripts/build_seed.py
 | 資料 | 用途 | 檔案 | 授權 |
 |---|---|---|---|
 | KANJIDIC2（EDRDG） | 日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義、新舊字體對應 | `kanjidic2.xml.gz`（檔頭版本 2020-250） | CC BY-SA 4.0 |
-| Unicode unihan-database | 粵語 kCantonese | `unihan-database-main.zip` | Unicode License V3 |
-| 教育部《臺灣台語常用詞辭典》開放資料 | 台語文讀、白讀（工作表「名」） | `kautian.ods` | **待確認**（請以辭典網站公告為準） |
+| Unicode Unihan（正式版） | 粵語 kCantonese、華語 kMandarin | `Unihan.zip`（Unihan_Readings.txt 日期 2026-07-31） | Unicode License V3 |
+| JMdict（EDRDG） | 詞彙讀音、英文釋義 | `JMdict_e.gz`（2026-11-18） | CC BY-SA 4.0 |
+| 教育部《臺灣台語常用詞辭典》開放資料 | 台語單字文讀、白讀（工作表「名」）、詞彙讀音（工作表「詞目」） | `kautian.ods` | **待確認**（請以辭典網站公告為準） |
 | nk2028 tshet-uinh-data | 中古音（`韻書/廣韻.csv`） | `tshet-uinh-data-main.zip` | CC0 1.0 |
 | English Wiktionary | 吳音／漢音／唐音／宋音／慣用音標記（`{{ja-readings}}` 模板） | 由 `fetch_wiktionary_readings.py` 透過 API 取得 | CC BY-SA 4.0 |
 
 注意事項：
-- `unihan-database` 是 Unicode 給專家審閱草案用的 GitHub 倉庫，不是正式發布版。階段 5 建議改用正式的 `Unihan.zip`。
+- 早期用過的 `unihan-database-main.zip`（Unicode 審閱草案倉庫）已改為正式版 `Unihan.zip`，不再使用。
 - KANJIDIC2 的 `jlpt` 是 2010 年以前的舊制 1–4 級，不是新制 N1–N5。
 - KANJIDIC2 沒有吳音／漢音標記，所以改用 Wiktionary。Wiktionary 是社群編輯，各字頁面的出處附有固定版本（oldid）連結。
 - 台語辭典工作表「名」中，標記為其他字書來源（甘、晉、彙等）的讀音目前略過。
-- 衍生的 `src/data/*.json` 含 KANJIDIC2 與 Wiktionary 資料，依 CC BY-SA 4.0 須標示出處並以相同授權釋出。
+- 衍生的 `src/data/*.json` 含 KANJIDIC2、JMdict 與 Wiktionary 資料，依 CC BY-SA 4.0 須標示出處並以相同授權釋出。

@@ -1,0 +1,34 @@
+{
+  "_說明": "人工編輯的詞彙清單：只放詞形、分類、中文意思與說明。讀音（日語、台語、粵語）一律由 build_seed.py 從 JMdict、教育部台語辭典、Unihan 查出，不要手寫在這裡。zh 是查台語、粵語時用的字形。",
+  "words": [
+    { "word": "学校", "type": "same", "meaning_zh": "學校", "note": "" },
+    { "word": "学生", "type": "same", "meaning_zh": "學生", "note": "" },
+    { "word": "大学", "type": "same", "meaning_zh": "大學", "note": "" },
+    { "word": "漢字", "type": "same", "meaning_zh": "漢字", "note": "" },
+    { "word": "海外", "type": "same", "meaning_zh": "海外；國外", "note": "" },
+    { "word": "方法", "type": "same", "meaning_zh": "方法", "note": "" },
+    { "word": "牛肉", "type": "same", "meaning_zh": "牛肉", "note": "" },
+    { "word": "日本", "type": "same", "meaning_zh": "日本", "note": "" },
+    { "word": "中国", "type": "same", "meaning_zh": "中國", "note": "" },
+    { "word": "東京", "type": "same", "meaning_zh": "東京", "note": "" },
+    { "word": "雑誌", "type": "same", "meaning_zh": "雜誌", "note": "" },
+    { "word": "一個", "type": "same", "meaning_zh": "一個", "note": "" },
+
+    { "word": "勉強", "type": "false_friend", "meaning_zh": "讀書、學習", "note": "華語的「勉強」是不情願、能力不足還硬做的意思。" },
+    { "word": "手紙", "type": "false_friend", "meaning_zh": "信、書信", "note": "華語的「手紙」指衛生紙。" },
+    { "word": "大丈夫", "type": "false_friend", "meaning_zh": "沒問題、不要緊", "note": "華語的「大丈夫」指有氣概的男子。" },
+
+    { "word": "哲学", "type": "wasei", "meaning_zh": "哲學", "note": "明治時期日本學者為翻譯西方概念所造的詞，後來傳入中文。" },
+    { "word": "野球", "type": "wasei", "meaning_zh": "棒球", "note": "日本造的詞；華語說「棒球」。" },
+
+    { "word": "案内", "zh": "案內", "type": "taigi_shared", "meaning_zh": "引導、帶路、介紹", "note": "台語也說「案內」。" },
+    { "word": "注文", "zh": "注文", "type": "taigi_shared", "meaning_zh": "訂購、下訂單", "note": "台語也說「注文」。" },
+    { "word": "出張", "zh": "出張", "type": "taigi_shared", "meaning_zh": "出差", "note": "台語也說「出張」。" },
+
+    { "word": "走る", "zh": "走", "type": "old_meaning", "meaning_zh": "跑", "note": "台語、粵語的「走」也是跑；華語的「走」是步行。" },
+    { "word": "食う", "zh": "食", "type": "old_meaning", "meaning_zh": "吃（較口語、粗魯；一般說「食べる」）", "note": "台語、粵語都用「食」表示吃；華語說「吃」。" },
+    { "word": "寒い", "zh": "寒", "type": "old_meaning", "meaning_zh": "（天氣）冷", "note": "台語的「寒」就是天氣冷；華語口語說「冷」。" },
+    { "word": "細かい", "zh": "細", "type": "old_meaning", "meaning_zh": "細小、瑣碎", "note": "台語、粵語的「細」是「小」的意思；華語的「細」多指細長、細緻。" },
+    { "word": "箸", "zh": "箸", "type": "old_meaning", "meaning_zh": "筷子", "note": "台語也用「箸」指筷子；華語說「筷子」。" }
+  ]
+}

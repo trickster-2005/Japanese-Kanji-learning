@@ -72,7 +72,9 @@ export type WordType =
   | "false_friend"
   | "wasei"
   | "taigi_shared"
-  | "old_meaning";
+  | "old_meaning"
+  /** JMdict 自動選出的常用詞，尚未人工分類 */
+  | "unclassified";
 
 export interface Word {
   word: string;
@@ -80,7 +82,7 @@ export interface Word {
   reading: string;
   /** JMdict 的其他讀音 */
   alt_readings: string[];
-  /** 日語意思（中文說明，人工編寫） */
+  /** 日語意思（中文說明，人工編寫；自動選出的詞為空字串） */
   meaning_zh: string;
   /** JMdict 英文釋義 */
   gloss_en: string[];
@@ -114,14 +116,23 @@ export interface Rule {
   summary: string;
   explanation: string;
   pattern: string;
+  /** 依此規律，日語音讀大致的樣子（反查推測器用） */
+  jp_hint: string;
   examples: string[];
   exceptions: RuleException[];
 }
 
 export interface Series {
+  /** 聲旁（繁體） */
   phonetic: string;
+  /** 共同音讀（程式依 KANJIDIC2 計算） */
   on: string;
+  /** 成員（繁體），同音的排前面 */
   members: string[];
+  /** 和聲旁共用「共同音讀」的成員數 */
+  shared: number;
+  /** ids：由 IDS 結構自動找出；manual：人工指定 */
+  source: "ids" | "manual";
 }
 
 // ---- 字典 ----

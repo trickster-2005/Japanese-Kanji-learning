@@ -25,3 +25,4 @@ dist-ssr
 
 # 原始資料（體積大、各有授權，不進 git）
 /data/
+__pycache__/

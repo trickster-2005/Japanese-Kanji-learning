@@ -1,0 +1,51 @@
+{
+  "kanjidic2": {
+    "name": "KANJIDIC2（EDRDG）",
+    "version": "2020-250",
+    "license": "CC BY-SA 4.0",
+    "covers": "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義",
+    "url": "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project"
+  },
+  "jmdict": {
+    "name": "JMdict（EDRDG）",
+    "version": "",
+    "license": "CC BY-SA 4.0",
+    "covers": "詞彙讀音、英文釋義",
+    "url": "https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project"
+  },
+  "unihan": {
+    "name": "Unicode Unihan",
+    "version": "2026-07-31",
+    "license": "Unicode License V3",
+    "covers": "粵語 kCantonese、華語 kMandarin、異體字",
+    "url": "https://www.unicode.org/charts/unihan.html"
+  },
+  "kautian": {
+    "name": "教育部《臺灣台語常用詞辭典》開放資料",
+    "version": "kautian.ods",
+    "license": "待確認",
+    "covers": "台語文讀、白讀、詞目讀音",
+    "url": "https://sutian.moe.edu.tw/"
+  },
+  "guangyun": {
+    "name": "nk2028 tshet-uinh-data（廣韻）",
+    "version": "",
+    "license": "CC0 1.0",
+    "covers": "中古音音韻地位、反切",
+    "url": "https://github.com/nk2028/tshet-uinh-data"
+  },
+  "wiktionary": {
+    "name": "English Wiktionary",
+    "version": "",
+    "license": "CC BY-SA 4.0",
+    "covers": "吳音／漢音／唐音／宋音／慣用音標記",
+    "url": "https://en.wiktionary.org/"
+  },
+  "ids": {
+    "name": "CJKVI IDS（ids.txt，源自 CHISE IDS）",
+    "version": "",
+    "license": "GPLv2（依 CHISE 條款）",
+    "covers": "漢字結構，用來自動找聲符字族",
+    "url": "https://github.com/cjkvi/cjkvi-ids"
+  }
+}

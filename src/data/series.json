@@ -1,5 +1,71 @@
 [
   {
+    "phonetic": "方",
+    "on": "ほう",
+    "members": [
+      "放",
+      "防",
+      "訪",
+      "房",
+      "芳",
+      "妨",
+      "坊",
+      "紡",
+      "肪"
+    ],
+    "shared": 9,
+    "source": "ids"
+  },
+  {
+    "phonetic": "且",
+    "on": "そ",
+    "members": [
+      "組",
+      "祖",
+      "狙",
+      "阻",
+      "粗",
+      "租",
+      "助",
+      "查",
+      "宜"
+    ],
+    "shared": 6,
+    "source": "ids"
+  },
+  {
+    "phonetic": "反",
+    "on": "はん",
+    "members": [
+      "坂",
+      "板",
+      "阪",
+      "飯",
+      "版",
+      "販",
+      "返",
+      "仮"
+    ],
+    "shared": 6,
+    "source": "ids"
+  },
+  {
+    "phonetic": "工",
+    "on": "こう",
+    "members": [
+      "功",
+      "紅",
+      "江",
+      "項",
+      "貢",
+      "虹",
+      "空",
+      "式"
+    ],
+    "shared": 6,
+    "source": "ids"
+  },
+  {
     "phonetic": "青",
     "on": "せい",
     "members": [
@@ -9,6 +75,1294 @@
       "請",
       "情",
       "靜"
-    ]
+    ],
+    "shared": 6,
+    "source": "manual"
+  },
+  {
+    "phonetic": "白",
+    "on": "はく",
+    "members": [
+      "迫",
+      "泊",
+      "拍",
+      "伯",
+      "舶",
+      "習",
+      "泉"
+    ],
+    "shared": 5,
+    "source": "ids"
+  },
+  {
+    "phonetic": "召",
+    "on": "しょう",
+    "members": [
+      "昭",
+      "招",
+      "紹",
+      "沼",
+      "詔",
+      "超"
+    ],
+    "shared": 5,
+    "source": "ids"
+  },
+  {
+    "phonetic": "交",
+    "on": "こう",
+    "members": [
+      "校",
+      "効",
+      "較",
+      "絞",
+      "郊"
+    ],
+    "shared": 5,
+    "source": "ids"
+  },
+  {
+    "phonetic": "包",
+    "on": "ほう",
+    "members": [
+      "抱",
+      "砲",
+      "胞",
+      "飽",
+      "泡"
+    ],
+    "shared": 5,
+    "source": "ids"
+  },
+  {
+    "phonetic": "曾",
+    "on": "そう",
+    "members": [
+      "增",
+      "層",
+      "贈",
+      "僧",
+      "憎"
+    ],
+    "shared": 5,
+    "source": "ids"
+  },
+  {
+    "phonetic": "寺",
+    "on": "じ",
+    "members": [
+      "時",
+      "持",
+      "詩",
+      "侍",
+      "待",
+      "等",
+      "特"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "古",
+    "on": "こ",
+    "members": [
+      "固",
+      "故",
+      "居",
+      "枯",
+      "苦",
+      "克"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "皮",
+    "on": "ひ",
+    "members": [
+      "被",
+      "彼",
+      "疲",
+      "披",
+      "波",
+      "破"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "令",
+    "on": "れい",
+    "members": [
+      "冷",
+      "齡",
+      "鈴",
+      "零",
+      "領"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "同",
+    "on": "どう",
+    "members": [
+      "銅",
+      "洞",
+      "筒",
+      "胴",
+      "興"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "奇",
+    "on": "き",
+    "members": [
+      "崎",
+      "埼",
+      "寄",
+      "騎",
+      "椅"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "次",
+    "on": "じ",
+    "members": [
+      "茨",
+      "資",
+      "姿",
+      "恣",
+      "盗"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "中",
+    "on": "ちゅう",
+    "members": [
+      "仲",
+      "沖",
+      "忠",
+      "衷"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "司",
+    "on": "し",
+    "members": [
+      "飼",
+      "詞",
+      "伺",
+      "嗣"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "生",
+    "on": "せい",
+    "members": [
+      "星",
+      "性",
+      "牲",
+      "姓"
+    ],
+    "shared": 4,
+    "source": "ids"
+  },
+  {
+    "phonetic": "丁",
+    "on": "てい",
+    "members": [
+      "廳",
+      "亭",
+      "訂",
+      "町",
+      "打",
+      "燈",
+      "可",
+      "頂",
+      "寧"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "各",
+    "on": "かく",
+    "members": [
+      "客",
+      "格",
+      "閣",
+      "路",
+      "略",
+      "絡",
+      "酪",
+      "賂"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "分",
+    "on": "ぶん",
+    "members": [
+      "粉",
+      "紛",
+      "雰",
+      "貧",
+      "盆",
+      "寡",
+      "頒"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "旦",
+    "on": "たん",
+    "members": [
+      "担",
+      "膽",
+      "但",
+      "晝",
+      "量",
+      "查"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "兆",
+    "on": "ちょう",
+    "members": [
+      "挑",
+      "跳",
+      "眺",
+      "逃",
+      "桃"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "己",
+    "on": "き",
+    "members": [
+      "記",
+      "紀",
+      "忌",
+      "配",
+      "妃"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "正",
+    "on": "せい",
+    "members": [
+      "整",
+      "政",
+      "征",
+      "証",
+      "症"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "豆",
+    "on": "とう",
+    "members": [
+      "頭",
+      "登",
+      "痘",
+      "短",
+      "壹"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "亡",
+    "on": "ぼう",
+    "members": [
+      "忘",
+      "忙",
+      "妄",
+      "盲"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "兼",
+    "on": "けん",
+    "members": [
+      "嫌",
+      "謙",
+      "鎌",
+      "廉"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "可",
+    "on": "か",
+    "members": [
+      "何",
+      "河",
+      "苛",
+      "奇"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "干",
+    "on": "かん",
+    "members": [
+      "刊",
+      "肝",
+      "汗",
+      "軒"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "肖",
+    "on": "しょう",
+    "members": [
+      "消",
+      "硝",
+      "宵",
+      "削"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "付",
+    "on": "ふ",
+    "members": [
+      "府",
+      "符",
+      "附"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "元",
+    "on": "がん",
+    "members": [
+      "完",
+      "頑",
+      "玩"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "化",
+    "on": "か",
+    "members": [
+      "花",
+      "貨",
+      "靴"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "半",
+    "on": "はん",
+    "members": [
+      "判",
+      "伴",
+      "畔"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "及",
+    "on": "きゅう",
+    "members": [
+      "級",
+      "吸",
+      "扱"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "固",
+    "on": "こ",
+    "members": [
+      "個",
+      "箇",
+      "錮"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "官",
+    "on": "かん",
+    "members": [
+      "館",
+      "管",
+      "棺"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "屈",
+    "on": "くつ",
+    "members": [
+      "掘",
+      "堀",
+      "窟"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "岡",
+    "on": "こう",
+    "members": [
+      "鋼",
+      "綱",
+      "剛"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "成",
+    "on": "せい",
+    "members": [
+      "盛",
+      "城",
+      "誠"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "朱",
+    "on": "しゅ",
+    "members": [
+      "株",
+      "殊",
+      "珠"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "申",
+    "on": "しん",
+    "members": [
+      "神",
+      "伸",
+      "紳"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "皆",
+    "on": "かい",
+    "members": [
+      "階",
+      "楷",
+      "諧"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "相",
+    "on": "そう",
+    "members": [
+      "想",
+      "箱",
+      "霜"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "義",
+    "on": "ぎ",
+    "members": [
+      "議",
+      "儀",
+      "犧"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "采",
+    "on": "さい",
+    "members": [
+      "菜",
+      "採",
+      "彩"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "麻",
+    "on": "ま",
+    "members": [
+      "摩",
+      "魔",
+      "磨"
+    ],
+    "shared": 3,
+    "source": "ids"
+  },
+  {
+    "phonetic": "王",
+    "on": "おう",
+    "members": [
+      "皇",
+      "旺",
+      "玉",
+      "理",
+      "全",
+      "球",
+      "望",
+      "現",
+      "聖",
+      "班",
+      "環",
+      "珍",
+      "狂",
+      "呈",
+      "珠",
+      "斑",
+      "玩",
+      "瑠",
+      "璃",
+      "弄"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "口",
+    "on": "こう",
+    "members": [
+      "高",
+      "享",
+      "中",
+      "石",
+      "京",
+      "足",
+      "回",
+      "知",
+      "兄",
+      "加",
+      "害",
+      "舌",
+      "占",
+      "如"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "少",
+    "on": "しょう",
+    "members": [
+      "省",
+      "抄",
+      "步",
+      "秒",
+      "砂",
+      "妙",
+      "劣",
+      "沙"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "支",
+    "on": "し",
+    "members": [
+      "枝",
+      "肢",
+      "岐",
+      "技",
+      "鼓",
+      "伎"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "里",
+    "on": "り",
+    "members": [
+      "理",
+      "裏",
+      "黑",
+      "童",
+      "埋",
+      "厘"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "非",
+    "on": "ひ",
+    "members": [
+      "悲",
+      "扉",
+      "罪",
+      "俳",
+      "排",
+      "輩"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "今",
+    "on": "きん",
+    "members": [
+      "琴",
+      "吟",
+      "念",
+      "含",
+      "貪"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "台",
+    "on": "だい",
+    "members": [
+      "怠",
+      "胎",
+      "始",
+      "治",
+      "冶"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "果",
+    "on": "か",
+    "members": [
+      "課",
+      "菓",
+      "巢",
+      "裸",
+      "彙"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "京",
+    "on": "けい",
+    "members": [
+      "景",
+      "鯨",
+      "就",
+      "涼"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "共",
+    "on": "きょう",
+    "members": [
+      "供",
+      "恭",
+      "異",
+      "洪"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "區",
+    "on": "おう",
+    "members": [
+      "歐",
+      "毆",
+      "驅",
+      "樞"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "士",
+    "on": "し",
+    "members": [
+      "仕",
+      "志",
+      "吉",
+      "壯"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "昔",
+    "on": "しゃく",
+    "members": [
+      "借",
+      "錯",
+      "措",
+      "惜"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "未",
+    "on": "み",
+    "members": [
+      "味",
+      "魅",
+      "妹",
+      "昧"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "東",
+    "on": "とう",
+    "members": [
+      "凍",
+      "棟",
+      "陳",
+      "鍊"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "監",
+    "on": "かん",
+    "members": [
+      "艦",
+      "鑑",
+      "藍",
+      "濫"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "貝",
+    "on": "ばい",
+    "members": [
+      "敗",
+      "唄",
+      "員",
+      "則"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "責",
+    "on": "せき",
+    "members": [
+      "積",
+      "績",
+      "債",
+      "漬"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "列",
+    "on": "れつ",
+    "members": [
+      "裂",
+      "烈",
+      "例"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "吳",
+    "on": "ご",
+    "members": [
+      "誤",
+      "娛",
+      "虞"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "因",
+    "on": "いん",
+    "members": [
+      "姻",
+      "咽",
+      "恩"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "屯",
+    "on": "とん",
+    "members": [
+      "鈍",
+      "頓",
+      "純"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "才",
+    "on": "さい",
+    "members": [
+      "材",
+      "財",
+      "閉"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "旨",
+    "on": "し",
+    "members": [
+      "指",
+      "脂",
+      "詣"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "更",
+    "on": "こう",
+    "members": [
+      "硬",
+      "梗",
+      "便"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "玄",
+    "on": "げん",
+    "members": [
+      "弦",
+      "舷",
+      "畜"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "童",
+    "on": "どう",
+    "members": [
+      "瞳",
+      "憧",
+      "鐘"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "丙",
+    "on": "へい",
+    "members": [
+      "病",
+      "柄"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "代",
+    "on": "だい",
+    "members": [
+      "貸",
+      "袋"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "全",
+    "on": "ぜん",
+    "members": [
+      "栓",
+      "詮"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "凡",
+    "on": "はん",
+    "members": [
+      "帆",
+      "汎"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "利",
+    "on": "り",
+    "members": [
+      "梨",
+      "痢"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "則",
+    "on": "そく",
+    "members": [
+      "側",
+      "測"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "加",
+    "on": "か",
+    "members": [
+      "賀",
+      "架"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "取",
+    "on": "しゅ",
+    "members": [
+      "最",
+      "趣"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "君",
+    "on": "くん",
+    "members": [
+      "郡",
+      "群"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "善",
+    "on": "ぜん",
+    "members": [
+      "膳",
+      "繕"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "壯",
+    "on": "そう",
+    "members": [
+      "裝",
+      "莊"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "太",
+    "on": "た",
+    "members": [
+      "駄",
+      "汰"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "奉",
+    "on": "ほう",
+    "members": [
+      "棒",
+      "俸"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "奴",
+    "on": "ど",
+    "members": [
+      "努",
+      "怒"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "家",
+    "on": "か",
+    "members": [
+      "稼",
+      "嫁"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "居",
+    "on": "きょ",
+    "members": [
+      "据",
+      "裾"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "巨",
+    "on": "きょ",
+    "members": [
+      "拒",
+      "距"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "市",
+    "on": "し",
+    "members": [
+      "姉",
+      "柿"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "帝",
+    "on": "てい",
+    "members": [
+      "締",
+      "諦"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "廣",
+    "on": "こう",
+    "members": [
+      "鑛",
+      "擴"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "廷",
+    "on": "てい",
+    "members": [
+      "庭",
+      "艇"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "建",
+    "on": "けん",
+    "members": [
+      "健",
+      "鍵"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "曹",
+    "on": "そう",
+    "members": [
+      "遭",
+      "槽"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "朝",
+    "on": "ちょう",
+    "members": [
+      "潮",
+      "嘲"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "永",
+    "on": "えい",
+    "members": [
+      "泳",
+      "詠"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "求",
+    "on": "きゅう",
+    "members": [
+      "球",
+      "救"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "泉",
+    "on": "せん",
+    "members": [
+      "線",
+      "腺"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "牙",
+    "on": "が",
+    "members": [
+      "芽",
+      "雅"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "票",
+    "on": "ひょう",
+    "members": [
+      "標",
+      "漂"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "章",
+    "on": "しょう",
+    "members": [
+      "障",
+      "彰"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "般",
+    "on": "はん",
+    "members": [
+      "盤",
+      "搬"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "苗",
+    "on": "びょう",
+    "members": [
+      "描",
+      "猫"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "足",
+    "on": "そく",
+    "members": [
+      "促",
+      "捉"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "長",
+    "on": "ちょう",
+    "members": [
+      "帳",
+      "張"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "門",
+    "on": "もん",
+    "members": [
+      "聞",
+      "問"
+    ],
+    "shared": 2,
+    "source": "ids"
+  },
+  {
+    "phonetic": "齊",
+    "on": "さい",
+    "members": [
+      "濟",
+      "劑"
+    ],
+    "shared": 2,
+    "source": "ids"
   }
 ]

@@ -1,11 +1,12 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import ComingSoon from "./components/ComingSoon";
 import Layout from "./components/Layout";
 import PopupProvider from "./components/popup/PopupProvider";
 import SettingsProvider from "./context/SettingsProvider";
 import HomePage from "./pages/HomePage";
 import KanjiPage from "./pages/KanjiPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import PredictPage from "./pages/PredictPage";
+import ReaderPage from "./pages/ReaderPage";
 import RuleDetailPage from "./pages/RuleDetailPage";
 import RulesPage from "./pages/RulesPage";
 import SearchPage from "./pages/SearchPage";
@@ -26,8 +27,8 @@ export default function App() {
             <Route path="kanji/:char" element={<KanjiPage />} />
             <Route path="words" element={<WordsPage />} />
             <Route path="series" element={<SeriesPage />} />
-            <Route path="predict" element={<ComingSoon title="反查推測器" stage={4} desc="輸入粵拼或台羅，列出可能的日語音讀與符合的漢字。" />} />
-            <Route path="reader" element={<ComingSoon title="閱讀模式" stage={4} desc="貼上一段日文，每個漢字都能點開查讀音、規律與字典。" />} />
+            <Route path="predict" element={<PredictPage />} />
+            <Route path="reader" element={<ReaderPage />} />
             <Route path="search" element={<SearchPage />} />
             <Route path="settings" element={<SettingsPage />} />
             <Route path="*" element={<NotFoundPage />} />

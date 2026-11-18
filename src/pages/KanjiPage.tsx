@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { WordText } from "../components/Clickable";
 import DictLinks from "../components/DictLinks";
 import { OnList } from "../components/Readings";
-import SourceText from "../components/SourceText";
+import SourceList from "../components/SourceList";
 import SeenButton from "../components/SeenButton";
 import { useSettings } from "../context/useSettings";
 import { SERIES, getKanji, getRule, getWord } from "../lib/data";
@@ -123,7 +123,7 @@ export default function KanjiPage() {
         </Row>
         <Row label="聲符字族">
           {series ? (
-            <Link to={`/series#${series.phonetic}`} className="hover:underline">
+            <Link to={`/series?q=${encodeURIComponent(series.phonetic)}`} className="hover:underline">
               {series.phonetic}（<span lang="ja" className="font-jp">{series.on}</span>）：{series.members.join("、")}
             </Link>
           ) : (
@@ -131,13 +131,7 @@ export default function KanjiPage() {
           )}
         </Row>
         <Row label="出處">
-          {k.sources.length ? (
-            <ul className="list-inside list-disc space-y-0.5 text-xs text-stone-600 dark:text-stone-300">
-              {k.sources.map((s) => <li key={s}><SourceText text={s} /></li>)}
-            </ul>
-          ) : (
-            EMPTY
-          )}
+          <SourceList sources={k.sources} jp={k.jp_char} />
         </Row>
         {k.notes && <Row label="備註"><span className="text-sm">{k.notes}</span></Row>}
       </dl>

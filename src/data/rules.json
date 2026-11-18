@@ -19,8 +19,195 @@
         "readings": [
           "あん"
         ]
+      },
+      {
+        "char": "虫",
+        "reason": "日語另有讀音「ちゅう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ちゅう"
+        ]
+      },
+      {
+        "char": "會",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "回",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "話",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（わ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "わ"
+        ]
+      },
+      {
+        "char": "繪",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "黃",
+        "reason": "日語另有讀音「おう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "おう"
+        ]
+      },
+      {
+        "char": "和",
+        "reason": "日語另有讀音「わ（吳音）、お（唐音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "わ",
+          "お"
+        ]
+      },
+      {
+        "char": "院",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（いん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "いん"
+        ]
+      },
+      {
+        "char": "橫",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（おう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "おう"
+        ]
+      },
+      {
+        "char": "舌",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（ぜつ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ぜつ"
+        ]
+      },
+      {
+        "char": "皇",
+        "reason": "日語另有讀音「おう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "おう"
+        ]
+      },
+      {
+        "char": "壞",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "惑",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（わく）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "わく"
+        ]
+      },
+      {
+        "char": "越",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（えつ、おつ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "えつ",
+          "おつ"
+        ]
+      },
+      {
+        "char": "惠",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "蓄",
+        "reason": "中古曉母，預期 k／g 開頭，但日語音讀（ちく）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ちく"
+        ]
+      },
+      {
+        "char": "賄",
+        "reason": "中古曉母，預期 k／g 開頭，但日語音讀（わい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "わい"
+        ]
+      },
+      {
+        "char": "懷",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "畜",
+        "reason": "中古曉母，預期 k／g 開頭，但日語音讀（ちく）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ちく"
+        ]
+      },
+      {
+        "char": "挾",
+        "reason": "日語另有讀音「しょう」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "しょう"
+        ]
+      },
+      {
+        "char": "墮",
+        "reason": "中古曉母，預期 k／g 開頭，但日語音讀（だ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "だ"
+        ]
+      },
+      {
+        "char": "潰",
+        "reason": "日語另有讀音「え（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "え"
+        ]
+      },
+      {
+        "char": "濫",
+        "reason": "中古匣母，預期 k／g 開頭，但日語音讀（らん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "らん"
+        ]
       }
-    ]
+    ],
+    "jp_hint": "か行（k）或が行（g）開頭"
   },
   {
     "id": "initial-f-to-h",
@@ -34,7 +221,280 @@
       "福",
       "分"
     ],
-    "exceptions": []
+    "exceptions": [
+      {
+        "char": "火",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "花",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "か",
+          "け"
+        ]
+      },
+      {
+        "char": "科",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（か）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "化",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "か",
+          "け"
+        ]
+      },
+      {
+        "char": "反",
+        "reason": "日語另有慣用音「たん」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "たん"
+        ]
+      },
+      {
+        "char": "苦",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（く）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "庫",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（こ、く）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "こ",
+          "く"
+        ]
+      },
+      {
+        "char": "課",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（か）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "貨",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "訓",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "くん",
+          "きん"
+        ]
+      },
+      {
+        "char": "仮",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（か、け）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "か",
+          "け"
+        ]
+      },
+      {
+        "char": "快",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（かい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "かい"
+        ]
+      },
+      {
+        "char": "呼",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "こ"
+        ]
+      },
+      {
+        "char": "揮",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "き"
+        ]
+      },
+      {
+        "char": "灰",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "かい"
+        ]
+      },
+      {
+        "char": "況",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "きょう"
+        ]
+      },
+      {
+        "char": "婚",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "こん"
+        ]
+      },
+      {
+        "char": "歡",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "かん"
+        ]
+      },
+      {
+        "char": "荒",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "こう"
+        ]
+      },
+      {
+        "char": "輝",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "き"
+        ]
+      },
+      {
+        "char": "堀",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（くつ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "くつ"
+        ]
+      },
+      {
+        "char": "寬",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（かん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "かん"
+        ]
+      },
+      {
+        "char": "悔",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "かい"
+        ]
+      },
+      {
+        "char": "勲",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（くん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "くん"
+        ]
+      },
+      {
+        "char": "缶",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（かん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "かん"
+        ]
+      },
+      {
+        "char": "虎",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "こ"
+        ]
+      },
+      {
+        "char": "枯",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（こ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "こ"
+        ]
+      },
+      {
+        "char": "塊",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（かい、け）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "かい",
+          "け"
+        ]
+      },
+      {
+        "char": "伐",
+        "reason": "日語另有讀音「か」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "慌",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "こう"
+        ]
+      },
+      {
+        "char": "薰",
+        "reason": "中古曉／匣母字：粵語變成 f，日語仍是か行（屬「h 變 k」）",
+        "partial": false,
+        "readings": [
+          "くん"
+        ]
+      },
+      {
+        "char": "款",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（かん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "かん"
+        ]
+      },
+      {
+        "char": "窟",
+        "reason": "粵語 f，預期は／ば行，但日語音讀（くつ、こつ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "くつ",
+          "こつ"
+        ]
+      }
+    ],
+    "jp_hint": "は行（h）或ば行（b）開頭"
   },
   {
     "id": "initial-ng-to-g",
@@ -48,7 +508,90 @@
       "銀",
       "眼"
     ],
-    "exceptions": []
+    "exceptions": [
+      {
+        "char": "樂",
+        "reason": "日語另有讀音「らく（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "らく"
+        ]
+      },
+      {
+        "char": "研",
+        "reason": "中古疑母，預期 g 開頭，但日語音讀（けん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "けん"
+        ]
+      },
+      {
+        "char": "驗",
+        "reason": "日語另有慣用音「けん」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "けん"
+        ]
+      },
+      {
+        "char": "兒",
+        "reason": "日語另有讀音「じ（漢音）、に（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じ",
+          "に"
+        ]
+      },
+      {
+        "char": "漁",
+        "reason": "日語另有慣用音「りょう」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "りょう"
+        ]
+      },
+      {
+        "char": "危",
+        "reason": "中古疑母，預期 g 開頭，但日語音讀（き）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "き"
+        ]
+      },
+      {
+        "char": "硬",
+        "reason": "中古疑母，預期 g 開頭，但日語音讀（こう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "こう"
+        ]
+      },
+      {
+        "char": "仰",
+        "reason": "日語另有慣用音「こう」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "こう"
+        ]
+      },
+      {
+        "char": "刈",
+        "reason": "日語另有讀音「かい」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "かい"
+        ]
+      },
+      {
+        "char": "詣",
+        "reason": "日語另有慣用音「けい」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "けい"
+        ]
+      }
+    ],
+    "jp_hint": "が行（g）開頭"
   },
   {
     "id": "initial-m-to-b",
@@ -63,7 +606,25 @@
       "武",
       "馬"
     ],
-    "exceptions": []
+    "exceptions": [
+      {
+        "char": "糸",
+        "reason": "中古明母，預期ま／ば行，但日語音讀（し）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "し"
+        ]
+      },
+      {
+        "char": "畝",
+        "reason": "日語另有慣用音「ほ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "ほ"
+        ]
+      }
+    ],
+    "jp_hint": "ま行（m，吳音）或ば行（b，漢音）開頭"
   },
   {
     "id": "initial-j-to-j-n",
@@ -77,7 +638,33 @@
       "人",
       "二"
     ],
-    "exceptions": []
+    "exceptions": [
+      {
+        "char": "兒",
+        "reason": "日語另有讀音「げい（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "げい"
+        ]
+      },
+      {
+        "char": "染",
+        "reason": "中古日母，預期な／ざ行，但日語音讀（せん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "せん"
+        ]
+      },
+      {
+        "char": "溺",
+        "reason": "日語另有讀音「でき（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "でき"
+        ]
+      }
+    ],
+    "jp_hint": "な行（n，吳音）或ざ行（j，漢音）開頭"
   },
   {
     "id": "initial-z-to-ch",
@@ -99,8 +686,421 @@
         "readings": [
           "さ"
         ]
+      },
+      {
+        "char": "場",
+        "reason": "日語另有讀音「じょう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じょう"
+        ]
+      },
+      {
+        "char": "直",
+        "reason": "日語另有讀音「じき（吳音）、じか（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じき",
+          "じか"
+        ]
+      },
+      {
+        "char": "持",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（じ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "じ"
+        ]
+      },
+      {
+        "char": "重",
+        "reason": "日語另有讀音「じゅう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じゅう"
+        ]
+      },
+      {
+        "char": "住",
+        "reason": "日語另有讀音「じゅう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じゅう"
+        ]
+      },
+      {
+        "char": "轉",
+        "reason": "日語讀 t／d 開頭（てん），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てん"
+        ]
+      },
+      {
+        "char": "著",
+        "reason": "日語另有讀音「じゃく（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じゃく"
+        ]
+      },
+      {
+        "char": "追",
+        "reason": "中古知母，預期 ch 開頭，但日語音讀（つい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "つい"
+        ]
+      },
+      {
+        "char": "植",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（しょく）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しょく"
+        ]
+      },
+      {
+        "char": "列",
+        "reason": "中古知母，預期 ch 開頭，但日語音讀（れつ、れ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "れつ",
+          "れ"
+        ]
+      },
+      {
+        "char": "丁",
+        "reason": "日語另有讀音「てい（漢音）、とう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "てい",
+          "とう"
+        ]
+      },
+      {
+        "char": "治",
+        "reason": "日語另有讀音「じ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じ"
+        ]
+      },
+      {
+        "char": "傳",
+        "reason": "日語讀 t／d 開頭（でん、てん），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "でん",
+          "てん"
+        ]
+      },
+      {
+        "char": "質",
+        "reason": "日語另有讀音「しつ（漢音）、しち（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "しつ",
+          "しち"
+        ]
+      },
+      {
+        "char": "程",
+        "reason": "日語讀 t／d 開頭（てい），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てい"
+        ]
+      },
+      {
+        "char": "展",
+        "reason": "日語讀 t／d 開頭（てん），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てん"
+        ]
+      },
+      {
+        "char": "宅",
+        "reason": "日語讀 t／d 開頭（たく），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たく"
+        ]
+      },
+      {
+        "char": "株",
+        "reason": "中古知母，預期 ch 開頭，但日語音讀（しゅ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しゅ"
+        ]
+      },
+      {
+        "char": "除",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（じょ、じ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "じょ",
+          "じ"
+        ]
+      },
+      {
+        "char": "澤",
+        "reason": "日語讀 t／d 開頭（たく），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たく"
+        ]
+      },
+      {
+        "char": "摘",
+        "reason": "日語讀 t／d 開頭（てき），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てき"
+        ]
+      },
+      {
+        "char": "撤",
+        "reason": "日語讀 t／d 開頭（てつ），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てつ"
+        ]
+      },
+      {
+        "char": "陣",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（じん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "じん"
+        ]
+      },
+      {
+        "char": "擇",
+        "reason": "日語讀 t／d 開頭（たく），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たく"
+        ]
+      },
+      {
+        "char": "徹",
+        "reason": "日語讀 t／d 開頭（てつ），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てつ"
+        ]
+      },
+      {
+        "char": "診",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（しん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しん"
+        ]
+      },
+      {
+        "char": "祉",
+        "reason": "中古徹母，預期 ch 開頭，但日語音讀（し）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "し"
+        ]
+      },
+      {
+        "char": "哲",
+        "reason": "日語讀 t／d 開頭（てつ），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てつ"
+        ]
+      },
+      {
+        "char": "滯",
+        "reason": "日語讀 t／d 開頭（たい、てい），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たい",
+          "てい"
+        ]
+      },
+      {
+        "char": "軸",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（じく）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "じく"
+        ]
+      },
+      {
+        "char": "沈",
+        "reason": "日語另有讀音「じん（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じん"
+        ]
+      },
+      {
+        "char": "卓",
+        "reason": "日語讀 t／d 開頭（たく），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たく"
+        ]
+      },
+      {
+        "char": "丈",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（じょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "じょう"
+        ]
+      },
+      {
+        "char": "貞",
+        "reason": "中古知母，預期 ch 開頭，但日語音讀（てい、じょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "てい",
+          "じょう"
+        ]
+      },
+      {
+        "char": "塗",
+        "reason": "日語讀 t／d 開頭（と），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "と"
+        ]
+      },
+      {
+        "char": "墜",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（つい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "つい"
+        ]
+      },
+      {
+        "char": "召",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（しょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しょう"
+        ]
+      },
+      {
+        "char": "稚",
+        "reason": "日語另有讀音「じ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じ"
+        ]
+      },
+      {
+        "char": "呈",
+        "reason": "日語讀 t／d 開頭（てい），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てい"
+        ]
+      },
+      {
+        "char": "濯",
+        "reason": "日語讀 t／d 開頭（たく），沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たく"
+        ]
+      },
+      {
+        "char": "偵",
+        "reason": "日語讀 t／d 開頭（てい），沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "てい"
+        ]
+      },
+      {
+        "char": "濁",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（だく、じょく）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "だく",
+          "じょく"
+        ]
+      },
+      {
+        "char": "椎",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（つい、すい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "つい",
+          "すい"
+        ]
+      },
+      {
+        "char": "屯",
+        "reason": "日語讀 t／d 開頭（とん），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "とん"
+        ]
+      },
+      {
+        "char": "枕",
+        "reason": "日語另有讀音「しん（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "しん"
+        ]
+      },
+      {
+        "char": "嫡",
+        "reason": "日語另有讀音「てき（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "てき"
+        ]
+      },
+      {
+        "char": "憧",
+        "reason": "中古澄母，預期 ch 開頭，但日語音讀（しょう、とう、どう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しょう",
+          "とう",
+          "どう"
+        ]
+      },
+      {
+        "char": "綻",
+        "reason": "日語讀 t／d 開頭（たん），和台語一樣保留舌尖塞音，沒有變成 ch",
+        "partial": false,
+        "readings": [
+          "たん"
+        ]
+      },
+      {
+        "char": "嘲",
+        "reason": "日語另有讀音「とう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "とう"
+        ]
+      },
+      {
+        "char": "填",
+        "reason": "日語另有讀音「てん（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "てん"
+        ]
       }
-    ]
+    ],
+    "jp_hint": "ち、ちゃ、ちゅ、ちょ（ch）開頭"
   },
   {
     "id": "coda-k",
@@ -114,7 +1114,303 @@
       "石",
       "學"
     ],
-    "exceptions": []
+    "exceptions": [
+      {
+        "char": "力",
+        "reason": "日語另有讀音「りい」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "りい"
+        ]
+      },
+      {
+        "char": "糸",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（し）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "し"
+        ]
+      },
+      {
+        "char": "作",
+        "reason": "日語另有讀音「さ（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "さ"
+        ]
+      },
+      {
+        "char": "數",
+        "reason": "日語另有讀音「すう（慣用音）、す（漢音）、しゅ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "すう",
+          "す",
+          "しゅ"
+        ]
+      },
+      {
+        "char": "直",
+        "reason": "日語另有讀音「じか（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じか"
+        ]
+      },
+      {
+        "char": "樂",
+        "reason": "日語另有讀音「ごう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ごう"
+        ]
+      },
+      {
+        "char": "讀",
+        "reason": "日語另有讀音「とう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "とう"
+        ]
+      },
+      {
+        "char": "度",
+        "reason": "日語另有讀音「ど（吳音）、と（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ど",
+          "と"
+        ]
+      },
+      {
+        "char": "惡",
+        "reason": "日語另有讀音「お（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "お"
+        ]
+      },
+      {
+        "char": "續",
+        "reason": "日語另有讀音「こう、きょう」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "こう",
+          "きょう"
+        ]
+      },
+      {
+        "char": "仂",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（どう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "どう"
+        ]
+      },
+      {
+        "char": "祝",
+        "reason": "日語另有讀音「しゅう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "しゅう"
+        ]
+      },
+      {
+        "char": "確",
+        "reason": "日語另有讀音「こう」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "こう"
+        ]
+      },
+      {
+        "char": "格",
+        "reason": "日語另有讀音「こう（慣用音）、ごう」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "こう",
+          "ごう"
+        ]
+      },
+      {
+        "char": "易",
+        "reason": "日語另有讀音「い（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "い"
+        ]
+      },
+      {
+        "char": "暴",
+        "reason": "日語另有讀音「ぼう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ぼう"
+        ]
+      },
+      {
+        "char": "若",
+        "reason": "日語另有讀音「にゃ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "にゃ"
+        ]
+      },
+      {
+        "char": "著",
+        "reason": "日語另有讀音「ちょ（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ちょ"
+        ]
+      },
+      {
+        "char": "射",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（しゃ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しゃ"
+        ]
+      },
+      {
+        "char": "冊",
+        "reason": "日語另有慣用音「さつ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "さつ"
+        ]
+      },
+      {
+        "char": "債",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（さい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "さい"
+        ]
+      },
+      {
+        "char": "刺",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（し）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "し"
+        ]
+      },
+      {
+        "char": "透",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（とう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "とう"
+        ]
+      },
+      {
+        "char": "較",
+        "reason": "日語另有讀音「こう（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "こう"
+        ]
+      },
+      {
+        "char": "脚",
+        "reason": "日語另有唐音「きゃ」不符合此規律；唐音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "きゃ"
+        ]
+      },
+      {
+        "char": "冒",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（ぼう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ぼう"
+        ]
+      },
+      {
+        "char": "喫",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（きつ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "きつ"
+        ]
+      },
+      {
+        "char": "簿",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（ぼ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ぼ"
+        ]
+      },
+      {
+        "char": "拍",
+        "reason": "日語另有慣用音「ひょう」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "ひょう"
+        ]
+      },
+      {
+        "char": "弔",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（ちょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ちょう"
+        ]
+      },
+      {
+        "char": "劾",
+        "reason": "入聲 -k，預期く／き結尾，但日語音讀（がい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "がい"
+        ]
+      },
+      {
+        "char": "蹴",
+        "reason": "日語另有慣用音「しゅう」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "しゅう"
+        ]
+      },
+      {
+        "char": "塞",
+        "reason": "日語另有讀音「さい（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "さい"
+        ]
+      },
+      {
+        "char": "柵",
+        "reason": "日語另有讀音「さん（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "さん"
+        ]
+      },
+      {
+        "char": "溺",
+        "reason": "日語另有讀音「じょう（漢音）、にょう（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じょう",
+          "にょう"
+        ]
+      },
+      {
+        "char": "沃",
+        "reason": "日語另有慣用音「よう」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "よう"
+        ]
+      }
+    ],
+    "jp_hint": "以く或き結尾"
   },
   {
     "id": "coda-t",
@@ -128,7 +1424,189 @@
       "八",
       "日"
     ],
-    "exceptions": []
+    "exceptions": [
+      {
+        "char": "出",
+        "reason": "日語另有讀音「すい（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "すい"
+        ]
+      },
+      {
+        "char": "切",
+        "reason": "日語另有讀音「さい（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "さい"
+        ]
+      },
+      {
+        "char": "列",
+        "reason": "日語另有讀音「れ」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "れ"
+        ]
+      },
+      {
+        "char": "不",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（ふ、ぶ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ふ",
+          "ぶ"
+        ]
+      },
+      {
+        "char": "說",
+        "reason": "日語另有慣用音「ぜい」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "ぜい"
+        ]
+      },
+      {
+        "char": "達",
+        "reason": "日語另有讀音「だ」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "だ"
+        ]
+      },
+      {
+        "char": "殺",
+        "reason": "日語另有讀音「さい（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "さい"
+        ]
+      },
+      {
+        "char": "折",
+        "reason": "日語另有慣用音「しゃく」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "しゃく"
+        ]
+      },
+      {
+        "char": "比",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（ひ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ひ"
+        ]
+      },
+      {
+        "char": "準",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（じゅん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "じゅん"
+        ]
+      },
+      {
+        "char": "閉",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（へい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "へい"
+        ]
+      },
+      {
+        "char": "突",
+        "reason": "日語另有讀音「か」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "拔",
+        "reason": "日語另有讀音「はい」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "はい"
+        ]
+      },
+      {
+        "char": "戾",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（れい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "れい"
+        ]
+      },
+      {
+        "char": "契",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（けい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "けい"
+        ]
+      },
+      {
+        "char": "揭",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（けい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "けい"
+        ]
+      },
+      {
+        "char": "伐",
+        "reason": "日語另有讀音「か」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "か"
+        ]
+      },
+      {
+        "char": "尉",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（い、じょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "い",
+          "じょう"
+        ]
+      },
+      {
+        "char": "帥",
+        "reason": "入聲 -t，預期ち／つ結尾，但日語音讀（すい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "すい"
+        ]
+      },
+      {
+        "char": "泌",
+        "reason": "日語另有讀音「ひ（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ひ"
+        ]
+      },
+      {
+        "char": "乞",
+        "reason": "日語另有讀音「き（漢音）、きけ」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "き",
+          "きけ"
+        ]
+      },
+      {
+        "char": "咽",
+        "reason": "日語另有讀音「いん（慣用音）、えん（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "いん",
+          "えん"
+        ]
+      }
+    ],
+    "jp_hint": "以ち或つ結尾"
   },
   {
     "id": "coda-p",
@@ -158,8 +1636,126 @@
         "readings": [
           "ざつ"
         ]
+      },
+      {
+        "char": "立",
+        "reason": "日語另有讀音「りつ（慣用音）、りっとる」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "りつ",
+          "りっとる"
+        ]
+      },
+      {
+        "char": "習",
+        "reason": "日語另有讀音「じゅ」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じゅ"
+        ]
+      },
+      {
+        "char": "法",
+        "reason": "日語另有讀音「ふらん」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ふらん"
+        ]
+      },
+      {
+        "char": "接",
+        "reason": "日語另有慣用音「せつ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "せつ"
+        ]
+      },
+      {
+        "char": "壓",
+        "reason": "日語另有讀音「あつ（慣用音）、えん」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "あつ",
+          "えん"
+        ]
+      },
+      {
+        "char": "納",
+        "reason": "日語另有唐音、慣用音「な、なん」不符合此規律；唐音、慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "な",
+          "なん"
+        ]
+      },
+      {
+        "char": "執",
+        "reason": "日語另有慣用音「しつ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "しつ"
+        ]
+      },
+      {
+        "char": "甲",
+        "reason": "日語另有慣用音「かん」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "かん"
+        ]
+      },
+      {
+        "char": "濕",
+        "reason": "日語另有慣用音「しつ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "しつ"
+        ]
+      },
+      {
+        "char": "攝",
+        "reason": "日語另有慣用音「せつ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "せつ"
+        ]
+      },
+      {
+        "char": "蓋",
+        "reason": "日語另有讀音「がい（慣用音）、かい（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "がい",
+          "かい"
+        ]
+      },
+      {
+        "char": "貼",
+        "reason": "日語另有慣用音「てん」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "てん"
+        ]
+      },
+      {
+        "char": "捻",
+        "reason": "日語另有讀音「ねん（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ねん"
+        ]
+      },
+      {
+        "char": "拉",
+        "reason": "日語另有慣用音「らつ、ら」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "らつ",
+          "ら"
+        ]
       }
-    ]
+    ],
+    "jp_hint": "以う結尾（清音前變成っ）"
   },
   {
     "id": "coda-m-n",
@@ -189,8 +1785,167 @@
         "readings": [
           "ぞう"
         ]
+      },
+      {
+        "char": "町",
+        "reason": "-m／-n 收尾，預期ん結尾，但日語音讀（ちょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ちょう"
+        ]
+      },
+      {
+        "char": "体",
+        "reason": "-m／-n 收尾，預期ん結尾，但日語音讀（たい、てい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "たい",
+          "てい"
+        ]
+      },
+      {
+        "char": "南",
+        "reason": "日語另有讀音「な（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "な"
+        ]
+      },
+      {
+        "char": "平",
+        "reason": "-m／-n 收尾，預期ん結尾，但日語音讀（へい、びょう、ひょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "へい",
+          "びょう",
+          "ひょう"
+        ]
+      },
+      {
+        "char": "反",
+        "reason": "日語另有讀音「ほ」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ほ"
+        ]
+      },
+      {
+        "char": "芸",
+        "reason": "日語另有讀音「げい（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "げい"
+        ]
+      },
+      {
+        "char": "令",
+        "reason": "-m／-n 收尾，預期ん結尾，但日語音讀（れい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "れい"
+        ]
+      },
+      {
+        "char": "欠",
+        "reason": "日語另有慣用音「けつ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "けつ"
+        ]
+      },
+      {
+        "char": "仁",
+        "reason": "日語另有讀音「に（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "に"
+        ]
+      },
+      {
+        "char": "懸",
+        "reason": "日語另有慣用音「け」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "け"
+        ]
+      },
+      {
+        "char": "仙",
+        "reason": "日語另有讀音「せんと」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "せんと"
+        ]
+      },
+      {
+        "char": "脅",
+        "reason": "-m／-n 收尾，預期ん結尾，但日語音讀（きょう）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "きょう"
+        ]
+      },
+      {
+        "char": "零",
+        "reason": "-m／-n 收尾，預期ん結尾，但日語音讀（れい）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "れい"
+        ]
+      },
+      {
+        "char": "汎",
+        "reason": "日語另有讀音「ぶ、ふう、ほう」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ぶ",
+          "ふう",
+          "ほう"
+        ]
+      },
+      {
+        "char": "丼",
+        "reason": "日語另有讀音「しょう（吳音）、せい（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "しょう",
+          "せい"
+        ]
+      },
+      {
+        "char": "咽",
+        "reason": "日語另有讀音「えつ（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "えつ"
+        ]
+      },
+      {
+        "char": "巾",
+        "reason": "日語另有讀音「ふく（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ふく"
+        ]
+      },
+      {
+        "char": "柵",
+        "reason": "日語另有讀音「さく（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "さく"
+        ]
+      },
+      {
+        "char": "頓",
+        "reason": "日語另有讀音「とつ（漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "とつ"
+        ]
       }
-    ]
+    ],
+    "jp_hint": "以ん結尾"
   },
   {
     "id": "coda-ng",
@@ -245,8 +2000,319 @@
         "readings": [
           "しん"
         ]
+      },
+      {
+        "char": "上",
+        "reason": "日語另有唐音「しゃん」不符合此規律；唐音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "しゃん"
+        ]
+      },
+      {
+        "char": "通",
+        "reason": "日語另有讀音「つ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "つ"
+        ]
+      },
+      {
+        "char": "公",
+        "reason": "日語另有讀音「く（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "工",
+        "reason": "日語另有讀音「く（吳音）、ぐ」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く",
+          "ぐ"
+        ]
+      },
+      {
+        "char": "風",
+        "reason": "日語另有讀音「ふ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ふ"
+        ]
+      },
+      {
+        "char": "打",
+        "reason": "-ng 收尾，預期う／い結尾，但日語音讀（だ、だーす）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "だ",
+          "だーす"
+        ]
+      },
+      {
+        "char": "宮",
+        "reason": "日語另有讀音「く（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "想",
+        "reason": "日語另有慣用音「そ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "そ"
+        ]
+      },
+      {
+        "char": "登",
+        "reason": "日語另有慣用音「と」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "と"
+        ]
+      },
+      {
+        "char": "輕",
+        "reason": "日語另有唐音「きん」不符合此規律；唐音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "きん"
+        ]
+      },
+      {
+        "char": "丁",
+        "reason": "日語另有讀音「ちん、ち」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ちん",
+          "ち"
+        ]
+      },
+      {
+        "char": "氏",
+        "reason": "-ng 收尾，預期う／い結尾，但日語音讀（し）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "し"
+        ]
+      },
+      {
+        "char": "種",
+        "reason": "-ng 收尾，預期う／い結尾，但日語音讀（しゅ）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "しゅ"
+        ]
+      },
+      {
+        "char": "功",
+        "reason": "日語另有讀音「く（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "經",
+        "reason": "日語另有唐音「きん」不符合此規律；唐音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "きん"
+        ]
+      },
+      {
+        "char": "夢",
+        "reason": "日語另有讀音「む（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "む"
+        ]
+      },
+      {
+        "char": "認",
+        "reason": "-ng 收尾，預期う／い結尾，但日語音讀（にん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "にん"
+        ]
+      },
+      {
+        "char": "供",
+        "reason": "日語另有讀音「く（吳音）、ぐ（慣用音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く",
+          "ぐ"
+        ]
+      },
+      {
+        "char": "降",
+        "reason": "日語另有讀音「ご」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ご"
+        ]
+      },
+      {
+        "char": "從",
+        "reason": "日語另有讀音「じゅ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "じゅ"
+        ]
+      },
+      {
+        "char": "擴",
+        "reason": "日語另有讀音「かく（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "かく"
+        ]
+      },
+      {
+        "char": "窓",
+        "reason": "日語另有讀音「す」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "す"
+        ]
+      },
+      {
+        "char": "紅",
+        "reason": "日語另有慣用音「く」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "浜",
+        "reason": "-ng 收尾，預期う／い結尾，但日語音讀（ひん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "ひん"
+        ]
+      },
+      {
+        "char": "徵",
+        "reason": "日語另有讀音「ち（吳音・漢音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ち"
+        ]
+      },
+      {
+        "char": "鈴",
+        "reason": "日語另有唐音「りん」不符合此規律；唐音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "りん"
+        ]
+      },
+      {
+        "char": "貢",
+        "reason": "日語另有讀音「く（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "曾",
+        "reason": "日語另有慣用音「そ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "そ"
+        ]
+      },
+      {
+        "char": "莊",
+        "reason": "日語另有讀音「ちゃん」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ちゃん"
+        ]
+      },
+      {
+        "char": "瓶",
+        "reason": "-ng 收尾，預期う／い結尾，但日語音讀（びん）都不符合；原因待確認",
+        "partial": false,
+        "readings": [
+          "びん"
+        ]
+      },
+      {
+        "char": "奉",
+        "reason": "日語另有讀音「ぶ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "ぶ"
+        ]
+      },
+      {
+        "char": "亭",
+        "reason": "日語另有唐音「ちん」不符合此規律；唐音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "ちん"
+        ]
+      },
+      {
+        "char": "坊",
+        "reason": "日語另有慣用音「ぼっ」不符合此規律；慣用音不在吳音／漢音的對應範圍內",
+        "partial": true,
+        "readings": [
+          "ぼっ"
+        ]
+      },
+      {
+        "char": "汎",
+        "reason": "日語另有讀音「はん（漢音）、ぶ、ほん（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "はん",
+          "ぶ",
+          "ほん"
+        ]
+      },
+      {
+        "char": "孔",
+        "reason": "日語另有讀音「く（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "く"
+        ]
+      },
+      {
+        "char": "腫",
+        "reason": "日語另有讀音「しゅ（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "しゅ"
+        ]
+      },
+      {
+        "char": "弄",
+        "reason": "日語另有讀音「る（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "る"
+        ]
+      },
+      {
+        "char": "籠",
+        "reason": "日語另有讀音「る（吳音）」不符合此規律；原因待確認",
+        "partial": true,
+        "readings": [
+          "る"
+        ]
       }
-    ]
+    ],
+    "jp_hint": "以う或い結尾"
   },
   {
     "id": "sokuon",
@@ -261,7 +2327,8 @@
       "一個",
       "日本"
     ],
-    "exceptions": []
+    "exceptions": [],
+    "jp_hint": "入聲字後面接清音時，變成っ"
   },
   {
     "id": "layers",
@@ -275,6 +2342,7 @@
       "行",
       "人"
     ],
-    "exceptions": []
+    "exceptions": [],
+    "jp_hint": "同一個字可能有吳音、漢音、唐音等不同讀法"
   }
 ]

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""從開放資料產生種子資料（規律例字＋聲符字族＋詞彙）。
+"""從開放資料產生網站資料：常用漢字 2,136 字＋規律例字＋聲符字族＋詞彙。
 
 讀取 /data 下的原始檔（直接讀壓縮檔，不需要先解壓縮）：
   kanjidic2.xml.gz            日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義、新舊字體對應
@@ -8,6 +8,7 @@
   tshet-uinh-data-main.zip    中古音（韻書/廣韻.csv）
   JMdict_e.gz                 詞彙讀音、英文釋義
   wiktionary_readings.json    吳音／漢音／唐音／慣用音標記（先執行 fetch_wiktionary_readings.py；沒有也能跑）
+  ids.txt 或 cjkvi-ids*.zip   漢字結構（IDS），用來自動找聲符字族（沒有也能跑，只用人工字族）
 
 人工編輯的清單（只有字形、分類、中文說明，沒有讀音）：
   scripts/words_source.json   詞彙
@@ -16,7 +17,9 @@
 輸出：src/data/kanji.json、words.json、series.json，並更新 rules.json 的 exceptions。
 所有讀音都來自上述檔案；查不到的欄位一律留空，畫面上顯示「待確認」。
 
-用法：python -X utf8 scripts/build_seed.py
+用法：
+  python -X utf8 scripts/build_data.py              # 全部常用漢字＋JMdict 常用詞
+  python -X utf8 scripts/build_data.py --seed-only  # 只做規律例字與字族（開發時較快）
 """
 from __future__ import annotations
 
@@ -30,6 +33,9 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from phonetic_series import build_series, find_ids_file, load_ids  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data"
 OUT = ROOT / "src" / "data"
@@ -41,8 +47,14 @@ SEED = list(dict.fromkeys(
     "校雜誌個本" "明行人"
 ))
 
-# 「讀音層次」規律無法由中古音自動判斷，直接用使用者列的例字
+# 「讀音層次」規律：使用者列的例字一定列入；其他字若同時有「只屬吳音」和「只屬漢音」的音讀也列入
 LAYER_CHARS = set("明行人")
+
+# JMdict 自動選詞：詞形 2–4 個字、全部是常用漢字、有常用標記，依頻率取前 N 個
+AUTO_WORD_LIMIT = 3000
+COMMON_TAGS = {"news1", "ichi1", "spec1", "spec2"}
+# 每個字的「常用詞彙」最多列幾個
+WORDS_PER_KANJI = 8
 
 warnings: list[str] = []
 
@@ -78,6 +90,8 @@ def load_kanjidic(path: Path):
             entry = {
                 "grade": int(grade) if grade else None,
                 "jlpt_old": int(jlpt) if jlpt else None,
+                "freq": int(el.findtext("misc/freq")) if el.findtext("misc/freq") else None,
+                "radical": int(el.findtext("radical/rad_value[@rad_type='classical']") or 0) or None,
                 "on": [to_hiragana(r.text) for r in el.iterfind("reading_meaning/rmgroup/reading[@r_type='ja_on']")],
                 "kun": [r.text for r in el.iterfind("reading_meaning/rmgroup/reading[@r_type='ja_kun']")],
                 "meaning_en": [m.text for m in el.iterfind("reading_meaning/rmgroup/meaning") if not m.attrib],
@@ -135,15 +149,41 @@ def load_unihan(path: Path) -> tuple[dict[str, dict[str, list[str]]], str]:
     return out, date_line
 
 
+# Unihan_Variants.txt 中用來找「新字體 → 舊字體／繁體」的欄位，依可信度排列
+VARIANT_FIELDS = ["kJapaneseOldVariant", "kTraditionalVariant", "kZVariant", "kSemanticVariant"]
+
+
+def load_unihan_variants(path: Path) -> dict[str, list[str]]:
+    """回傳 {字: [異體字…]}，依 VARIANT_FIELDS 的順序排列"""
+    found: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    with zipfile.ZipFile(path) as zf:
+        for line in io.TextIOWrapper(zf.open("Unihan_Variants.txt"), encoding="utf-8"):
+            if not line.startswith("U+"):
+                continue
+            cp, field, vals = line.rstrip("\n").split("\t")
+            if field not in VARIANT_FIELDS:
+                continue
+            ch = chr(int(cp[2:], 16))
+            for v in vals.split():
+                found[ch].append((VARIANT_FIELDS.index(field), chr(int(v.split("<")[0][2:], 16))))
+    return {ch: list(dict.fromkeys(v for _, v in sorted(vs))) for ch, vs in found.items()}
+
+
 # ---------------------------------------------------------------- 台語辭典
 
 T = "{urn:oasis:names:tc:opendocument:xmlns:table:1.0}"
 
 
-def load_taigi(path: Path) -> tuple[dict[str, dict[str, list[str]]], dict[str, list[str]]]:
-    """回傳 (單字讀音 {字: {literary, colloquial, unmarked}}, 詞目讀音 {漢字: [羅馬字…]})"""
+def load_taigi(path: Path):
+    """回傳 (單字讀音 {字: {literary, colloquial, unmarked}}, 詞目讀音 {漢字: [羅馬字…]}, {字: {出處標記…}})
+
+    工作表「名」的「類型」欄：文→文讀、白→白讀、不標或空白→未標文白。
+    其他值（甘、晉、彙…）是辭典註明的讀音出處（例如甘為霖《廈門音新字典》），讀音一樣收錄為「未標文白」，
+    並記下出處標記。大寫開頭的羅馬字是專有名詞用法，略過。
+    """
     out: dict[str, dict[str, list[str]]] = defaultdict(lambda: {"literary": [], "colloquial": [], "unmarked": []})
     entries: dict[str, list[str]] = defaultdict(list)
+    tags: dict[str, set[str]] = defaultdict(set)
     skipped = 0
     sheet = None
     with zipfile.ZipFile(path) as zf, zf.open("content.xml") as f:
@@ -167,15 +207,18 @@ def load_taigi(path: Path) -> tuple[dict[str, dict[str, list[str]]], dict[str, l
                 vals += [""] * 4
                 ch, roman, _, kind = vals[:4]
                 if ch and ch != "漢字" and roman:
-                    key = {"文": "literary", "白": "colloquial", "不標": "unmarked", "": "unmarked"}.get(kind)
-                    if key is None:
+                    if roman[0].isupper():
                         skipped += 1
-                    elif roman not in out[ch][key]:
+                        continue
+                    key = {"文": "literary", "白": "colloquial"}.get(kind, "unmarked")
+                    if kind not in ("文", "白", "不標", ""):
+                        tags[ch].add(kind)
+                    if roman not in out[ch][key]:
                         out[ch][key].append(roman)
             el.clear()
     if skipped:
-        print(f"（台語：略過 {skipped} 筆標記為其他來源的讀音）")
-    return out, entries
+        print(f"（台語：略過 {skipped} 筆專有名詞讀音）")
+    return out, entries, tags
 
 
 # ---------------------------------------------------------------- 切韻音系
@@ -214,10 +257,18 @@ def load_guangyun(path: Path) -> dict[str, list[dict]]:
 
 # ---------------------------------------------------------------- JMdict
 
-def load_jmdict(path: Path, wanted: set[str]) -> tuple[dict[str, dict], str]:
-    """只讀需要的詞。回傳 ({詞: {readings, gloss, seq}}, 建檔日期)
+def jm_rank(tags: list[str]) -> int:
+    """頻率排名：nf01（最常見）→ 1 … nf48 → 48；只有其他常用標記 → 49；沒有 → 99"""
+    nf = [int(t[2:]) for t in tags if t.startswith("nf")]
+    if nf:
+        return min(nf)
+    return 49 if set(tags) & COMMON_TAGS else 99
 
-    同一個詞形若有多個詞條，取有 ke_pri（常用標記）的那條；讀音依 re_restr 篩選、略過 re_nokanji。
+
+def load_jmdict(path: Path, wanted: set[str], accept=lambda keb, tags: False) -> tuple[dict[str, dict], str]:
+    """讀 wanted 裡的詞，以及 accept(詞形, 常用標記) 為真的詞。回傳 ({詞: {readings, gloss, seq, rank}}, 建檔日期)
+
+    同一個詞形若有多個詞條，取頻率最高的那條；讀音依 re_restr 篩選、略過 re_nokanji。
     """
     found: dict[str, list[dict]] = defaultdict(list)
     created = ""
@@ -231,7 +282,8 @@ def load_jmdict(path: Path, wanted: set[str]) -> tuple[dict[str, dict], str]:
                 continue
             for k in el.iterfind("k_ele"):
                 keb = k.findtext("keb")
-                if keb not in wanted:
+                tags = [t.text for t in k.iterfind("ke_pri")]
+                if keb not in wanted and not accept(keb, tags):
                     continue
                 readings = []
                 for r in el.iterfind("r_ele"):
@@ -244,14 +296,14 @@ def load_jmdict(path: Path, wanted: set[str]) -> tuple[dict[str, dict], str]:
                 sense = el.find("sense")
                 found[keb].append({
                     "seq": el.findtext("ent_seq"),
-                    "pri": k.find("ke_pri") is not None,
+                    "rank": jm_rank(tags),
                     "readings": readings,
                     "gloss": [g.text for g in sense.iterfind("gloss")][:3] if sense is not None else [],
                 })
             el.clear()
     out = {}
     for keb, cands in found.items():
-        cands.sort(key=lambda c: not c["pri"])  # 有常用標記的排前面
+        cands.sort(key=lambda c: c["rank"])  # 頻率高的排前面
         out[keb] = cands[0]
     return out, created
 
@@ -351,7 +403,12 @@ def judge(k: dict) -> tuple[list[str], dict[str, dict]]:
 
     if inits & {"知", "徹", "澄"}:
         mu = "／".join(sorted(inits & {"知", "徹", "澄"}))
-        check("initial-z-to-ch", starts(set("ちぢ")), f"中古{mu}母，預期 ch 開頭")
+        reason_all = None
+        if on and all(r[0] in "たてとだでど" for r in on):
+            hok = [h for hs in k["hokkien"].values() for h in hs]
+            same_as_taigi = any(h.startswith("t") and not h.startswith("ts") for h in hok)
+            reason_all = f"日語讀 t／d 開頭（{fmt(on)}）" + ("，和台語一樣保留舌尖塞音" if same_as_taigi else "") + "，沒有變成 ch"
+        check("initial-z-to-ch", starts(set("ちぢ")), f"中古{mu}母，預期 ch 開頭", reason_all)
 
     ent_cls = {mc_rhyme_class(m) for m in mcs if m["tone"] == "入"}
     nas_cls = {mc_rhyme_class(m) for m in mcs if m["tone"] != "入"}
@@ -367,7 +424,10 @@ def judge(k: dict) -> tuple[list[str], dict[str, dict]]:
     if "ng" in nas_cls:
         check("coda-ng", ends("う", "い"), "-ng 收尾，預期う／い結尾")
 
-    if k["char"] in LAYER_CHARS:
+    def only(layer: str, other: str) -> bool:
+        return any(layer in o["layers"] and other not in o["layers"] for o in k["on"] if not o.get("extra"))
+
+    if k["char"] in LAYER_CHARS or (only("吳音", "漢音") and only("漢音", "吳音")):
         rules.append("layers")
 
     return rules, exc
@@ -395,14 +455,33 @@ def split_taigi_tags(romans: list[str]) -> dict[str, list[str]]:
     return out
 
 
+def pick_trad(jp: str, unihan_var: dict, new_to_old: dict, taigi: dict, gy: dict) -> tuple[str, list[str]]:
+    """常用漢字（新字體）→ 台灣、香港使用的字形。回傳 (字形, 其他候選)
+
+    新字體本身在台語辭典查得到 → 台灣也用這個字形，直接用。
+    否則依序看 Unihan 的 kJapaneseOldVariant／kTraditionalVariant／kZVariant／kSemanticVariant，
+    再看 KANJIDIC2 variant 反查的字，挑台語辭典或廣韻查得到的。
+    """
+    if jp in taigi:
+        return jp, []
+    cands = list(dict.fromkeys(unihan_var.get(jp, []) + new_to_old.get(jp, [])))
+    # cands 已依欄位可信度排好，取第一個台語辭典或廣韻查得到的
+    good = [c for c in cands if c != jp and (c in taigi or c in gy)]
+    if good:
+        return good[0], good[1:]
+    return jp, []
+
+
 def main() -> None:
+    seed_only = "--seed-only" in sys.argv
     print("讀取 KANJIDIC2…")
     kd, old_to_new, kd_version = load_kanjidic(RAW / "kanjidic2.xml.gz")
     print("讀取 Unihan…")
     unihan, unihan_date = load_unihan(RAW / "Unihan.zip")
     canto, mando = unihan["kCantonese"], unihan["kMandarin"]
+    unihan_var = load_unihan_variants(RAW / "Unihan.zip")
     print("讀取 臺灣台語常用詞辭典…")
-    taigi, taigi_entries = load_taigi(RAW / "kautian.ods")
+    taigi, taigi_entries, taigi_tags = load_taigi(RAW / "kautian.ods")
     print("讀取 廣韻…")
     gy = load_guangyun(RAW / "tshet-uinh-data-main.zip")
     wikt_path = RAW / "wiktionary_readings.json"
@@ -413,15 +492,52 @@ def main() -> None:
     words_src = json.loads((ROOT / "scripts" / "words_source.json").read_text(encoding="utf-8"))["words"]
     series_src = json.loads((ROOT / "scripts" / "series_source.json").read_text(encoding="utf-8"))["series"]
     rules_data = json.loads((OUT / "rules.json").read_text(encoding="utf-8"))
-    print("讀取 JMdict…")
-    jmdict, jm_created = load_jmdict(RAW / "JMdict_e.gz", {w["word"] for w in words_src})
-
-    # 規律例字＋聲符字族的字
+    # ---- 要收錄的字：(繁體, 新字體, 是否經 variant 對應, 其他候選)
     series_of: dict[str, str] = {}
     for sr in series_src:
         for c in [sr["phonetic"], *sr["members"]]:
             series_of[c] = sr["phonetic"]
-    all_chars = list(dict.fromkeys(SEED + list(series_of)))
+    pairs: list[tuple[str, str, bool, list[str]]] = []
+    variant_src: dict[str, str] = {}
+    used_trad: set[str] = set()
+    used_jp: set[str] = set()
+    for trad in dict.fromkeys(SEED + list(series_of)):
+        jp, via = resolve_jp_char(trad, kd, old_to_new)
+        pairs.append((trad, jp, via, []))
+        used_trad.add(trad)
+        used_jp.add(jp)
+    if not seed_only:
+        new_to_old: dict[str, list[str]] = defaultdict(list)
+        for old, news in old_to_new.items():
+            for n in dict.fromkeys(news):
+                new_to_old[n].append(old)
+        joyo = sorted((c for c, e in kd.items() if is_joyo(e)), key=lambda c: (kd[c]["grade"], kd[c]["freq"] or 9999))
+        print(f"常用漢字 {len(joyo)} 字")
+        for jp in joyo:
+            if jp in used_jp:
+                continue
+            trad, others = pick_trad(jp, unihan_var, new_to_old, taigi, gy)
+            if trad in used_trad:
+                trad, others = jp, []
+            pairs.append((trad, jp, trad != jp, others))
+            if trad != jp:
+                variant_src[jp] = "Unihan 異體字欄位" if trad in unihan_var.get(jp, []) else "KANJIDIC2 variant 欄位"
+            used_trad.add(trad)
+            used_jp.add(jp)
+    jp_to_trad = {jp: trad for trad, jp, _, _ in pairs}
+    joyo_set = {jp for _, jp, _, _ in pairs}
+
+    print("讀取 JMdict…")
+
+    def accept(keb: str, tags: list[str]) -> bool:
+        return (
+            not seed_only
+            and 2 <= len(keb) <= 4
+            and all(c in joyo_set for c in keb)
+            and bool(set(tags) & COMMON_TAGS)
+        )
+
+    jmdict, jm_created = load_jmdict(RAW / "JMdict_e.gz", {w["word"] for w in words_src}, accept)
 
     # ---- 詞彙
     words = []
@@ -431,17 +547,17 @@ def main() -> None:
         w_sources = []
         readings = jm["readings"] if jm else []
         if jm:
-            w_sources.append(f"讀音、英文釋義：JMdict（{jm_created}）詞條 #{jm['seq']}")
+            w_sources.append(f"jmdict:{jm['seq']}")
         else:
             warn(f"詞彙「{ws['word']}」：JMdict 查不到")
         hok = split_taigi_tags(taigi_entries.get(zh, [])) if zh else empty_hokkien()
         if any(hok.values()):
-            w_sources.append(f"台語：教育部《臺灣台語常用詞辭典》開放資料，詞目「{zh}」")
+            w_sources.append(f"kautian-word:{zh}")
         elif zh:
             warn(f"詞彙「{ws['word']}」：台語辭典查不到詞目「{zh}」")
         can = canto.get(zh, []) if len(zh) == 1 else []
         if can:
-            w_sources.append(f"粵語：Unicode Unihan kCantonese（U+{ord(zh):04X}，{unihan_date}）")
+            w_sources.append(f"yue:U+{ord(zh):04X}")
         words.append({
             "word": ws["word"],
             "reading": readings[0] if readings else "",
@@ -458,11 +574,38 @@ def main() -> None:
             "sources": w_sources,
         })
 
+    manual = {w["word"] for w in words}
+    auto = sorted((jm for keb, jm in jmdict.items() if keb not in manual), key=lambda jm: (jm["rank"], jm["seq"]))
+    auto_kebs = [keb for keb, jm in sorted(jmdict.items(), key=lambda kv: (kv[1]["rank"], kv[1]["seq"])) if keb not in manual]
+    for keb in auto_kebs[:AUTO_WORD_LIMIT]:
+        jm = jmdict[keb]
+        zh = "".join(jp_to_trad.get(c, c) for c in keb)
+        hok = split_taigi_tags(taigi_entries.get(zh, []))
+        w_sources = [f"jmdict:{jm['seq']}"]
+        if any(hok.values()):
+            w_sources.append(f"kautian-word:{zh}")
+        words.append({
+            "word": keb,
+            "reading": jm["readings"][0] if jm["readings"] else "",
+            "alt_readings": jm["readings"][1:],
+            "meaning_zh": "",
+            "gloss_en": jm["gloss"],
+            "type": "unclassified",
+            "kanji": list(keb),
+            "rules": ["sokuon"] if any("っ" in r for r in jm["readings"]) else [],
+            "zh": zh,
+            "hokkien": hok,
+            "cantonese": [],
+            "note": "",
+            "sources": w_sources,
+        })
+    del auto
+    print(f"JMdict 自動選詞：符合條件 {len(auto_kebs)} 個，收錄前 {min(len(auto_kebs), AUTO_WORD_LIMIT)} 個")
+
     kanji_out = []
     exceptions: dict[str, list[dict]] = defaultdict(list)
 
-    for trad in all_chars:
-        jp, via_variant = resolve_jp_char(trad, kd, old_to_new)
+    for trad, jp, via_variant, other_trad in pairs:
         e = kd.get(jp)
         if e is None:
             warn(f"{trad}：KANJIDIC2 沒有資料")
@@ -482,38 +625,35 @@ def main() -> None:
                 if r not in kd_on and all(o["kana"] != r for o in on):
                     on.append({"kana": r, "layers": layers_of(r), "extra": True})
         if e:
-            sources.append(f"日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義：KANJIDIC2（{kd_version}）")
+            sources.append("kanjidic2")
         if w_layers:
-            sources.append(
-                f"讀音層次（吳音／漢音／唐音／慣用音）：English Wiktionary「{jp}」{{{{ja-readings}}}}，"
-                f"CC BY-SA 4.0 https://en.wiktionary.org/w/index.php?oldid={w['revid']}"
-            )
+            sources.append(f"wiktionary:{w['revid']}")
         elif e:
             warn(f"{trad}：Wiktionary 沒有讀音層次資料")
         if via_variant:
-            sources.append(f"新字體對應：KANJIDIC2「{jp}」的 variant 欄位")
+            sources.append("variant:" + ("unihan" if variant_src.get(jp, "").startswith("Unihan") else "kanjidic2"))
 
         can = canto.get(trad) or canto.get(jp) or []
         if can:
             cp = ord(trad if trad in canto else jp)
-            sources.append(f"粵語：Unicode Unihan kCantonese（U+{cp:04X}，{unihan_date}）")
+            sources.append(f"yue:U+{cp:04X}")
         else:
             warn(f"{trad}：查不到粵語")
         man = mando.get(trad) or mando.get(jp) or []
         if man:
-            sources.append(f"華語：Unicode Unihan kMandarin（{unihan_date}）")
+            sources.append("man")
 
         tg = taigi.get(trad)
         hokkien = {"literary": [], "colloquial": [], "unmarked": []}
         if tg:
             hokkien = {k: list(v) for k, v in tg.items()}
-            sources.append("台語：教育部《臺灣台語常用詞辭典》開放資料 kautian.ods，工作表「名」")
+            sources.append("kautian:" + "、".join(sorted(taigi_tags.get(trad, []))))
         else:
             warn(f"{trad}：查不到台語")
 
         mc = gy.get(trad, [])
         if mc:
-            sources.append("中古音：nk2028 tshet-uinh-data 韻書/廣韻.csv 小韻 " + "、".join(f"#{m['xiaoyun']}" for m in mc))
+            sources.append("guangyun:" + ",".join(m["xiaoyun"] for m in mc))
         else:
             warn(f"{trad}：廣韻查不到")
 
@@ -533,8 +673,8 @@ def main() -> None:
             "jlpt": "",
             "jlpt_old": e["jlpt_old"] if e else None,
             "joyo": is_joyo(e),
-            "words": [w["word"] for w in words if jp in w["word"]],
-            "notes": "",
+            "words": [w["word"] for w in words if jp in w["word"]][:WORDS_PER_KANJI],
+            "notes": f"新字體「{jp}」也對應：{'、'.join(other_trad)}" if other_trad else "",
             "sources": sources,
             "_mc": mc,
         }
@@ -547,9 +687,21 @@ def main() -> None:
     for r in rules_data:
         r["exceptions"] = exceptions.get(r["id"], [])
 
-    # ---- 聲符字族：共同音讀 = 聲符與成員的現代音讀（KANJIDIC2）中出現最多次的
+    # ---- 聲符字族
     by_char = {k["char"]: k for k in kanji_out}
     series_out = []
+    ids_path = find_ids_file(RAW)
+    if ids_path:
+        print(f"讀取 IDS：{ids_path.name}")
+        ids = load_ids(ids_path)
+        series_out = build_series(kanji_out, ids, {c: e["radical"] for c, e in kd.items()})
+        for sr in series_out:
+            sr["source"] = "ids"
+        print(f"IDS 自動字族：{len(series_out)} 組")
+    else:
+        warn("沒有 IDS 檔（data/ids.txt 或 cjkvi-ids*.zip），只用人工字族")
+    # 人工字族：同一個聲符時取代自動結果。共同音讀 = 聲符與成員的音讀中出現最多次的
+    auto_phonetics = {sr["phonetic"] for sr in series_out}
     for sr in series_src:
         counts: dict[str, int] = defaultdict(int)
         for c in [sr["phonetic"], *sr["members"]]:
@@ -557,32 +709,80 @@ def main() -> None:
                 if not o.get("extra"):
                     counts[o["kana"]] += 1
         shared = max(counts, key=lambda r: counts[r]) if counts else ""
-        series_out.append({"phonetic": sr["phonetic"], "on": shared, "members": sr["members"]})
-        print(f"字族 {sr['phonetic']}：共同音讀 {shared}（{dict(counts)}）")
+        manual = {
+            "phonetic": sr["phonetic"],
+            "on": shared,
+            "members": sr["members"],
+            "shared": sum(1 for c in sr["members"] if any(o["kana"] == shared for o in by_char[c]["on"])),
+            "source": "manual",
+        }
+        if sr["phonetic"] in auto_phonetics:
+            series_out = [manual if x["phonetic"] == sr["phonetic"] else x for x in series_out]
+        else:
+            series_out.insert(0, manual)
+    # 每個字記下所屬字族（聲符本身屬於自己的字族；成員若屬於多組，取第一組）
+    for k in kanji_out:
+        k["phonetic_series"] = ""
+    for sr in series_out:
+        for c in [sr["phonetic"], *sr["members"]]:
+            if not by_char[c]["phonetic_series"]:
+                by_char[c]["phonetic_series"] = sr["phonetic"]
 
     (OUT / "kanji.json").write_text(json.dumps(kanji_out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "rules.json").write_text(json.dumps(rules_data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    meta = {
+        "kanjidic2": {"name": "KANJIDIC2（EDRDG）", "version": kd_version, "license": "CC BY-SA 4.0",
+                      "covers": "日語音讀、訓讀、常用漢字、舊制 JLPT、英文釋義", "url": "https://www.edrdg.org/wiki/index.php/KANJIDIC_Project"},
+        "jmdict": {"name": "JMdict（EDRDG）", "version": jm_created, "license": "CC BY-SA 4.0",
+                   "covers": "詞彙讀音、英文釋義", "url": "https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project"},
+        "unihan": {"name": "Unicode Unihan", "version": unihan_date, "license": "Unicode License V3",
+                   "covers": "粵語 kCantonese、華語 kMandarin、異體字", "url": "https://www.unicode.org/charts/unihan.html"},
+        "kautian": {"name": "教育部《臺灣台語常用詞辭典》開放資料", "version": "kautian.ods", "license": "待確認",
+                    "covers": "台語文讀、白讀、詞目讀音", "url": "https://sutian.moe.edu.tw/"},
+        "guangyun": {"name": "nk2028 tshet-uinh-data（廣韻）", "version": "", "license": "CC0 1.0",
+                     "covers": "中古音音韻地位、反切", "url": "https://github.com/nk2028/tshet-uinh-data"},
+        "wiktionary": {"name": "English Wiktionary", "version": "", "license": "CC BY-SA 4.0",
+                       "covers": "吳音／漢音／唐音／宋音／慣用音標記", "url": "https://en.wiktionary.org/"},
+        "ids": {"name": "CJKVI IDS（ids.txt，源自 CHISE IDS）", "version": "", "license": "GPLv2（依 CHISE 條款）",
+                "covers": "漢字結構，用來自動找聲符字族", "url": "https://github.com/cjkvi/cjkvi-ids"},
+    }
+    (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "words.json").write_text(json.dumps(words, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "series.json").write_text(json.dumps(series_out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"\n寫出 {len(words)} 個詞")
+    # 詳細內容寫到 data/build_report.txt（不進 git），終端機只印摘要
+    lines = [f"詞彙 {len(words)} 個"]
     for w in words:
-        print(f"  {w['word']} {w['reading']} {'/'.join(w['alt_readings'])} 台{w['hokkien']} 粵{'/'.join(w['cantonese'])} {w['rules']}")
-
-    print(f"\n寫出 {len(kanji_out)} 字")
+        lines.append(f"  {w['word']} {w['reading']} {'/'.join(w['alt_readings'])} {w['type']} 台{w['hokkien']} {w['rules']}")
+    lines.append(f"\n漢字 {len(kanji_out)} 字")
     for k in kanji_out:
         h = k["hokkien"]
-        print(f"{k['char']}{k['jp_char']} 日{'/'.join(o['kana'] + ('(' + '・'.join(o['layers']) + ')' if o['layers'] else '') + ('*' if o.get('extra') else '') for o in k['on'])} 粵{'/'.join(k['cantonese'])} "
-              f"台文{'/'.join(h['literary'])} 白{'/'.join(h['colloquial'])} 未標{'/'.join(h['unmarked'])} "
-              f"中古{'/'.join(m['status'] + '(' + m['rhyme'] + ')' for m in k['middle_chinese'])} → {','.join(k['rules'])}")
-    print("\n例外：")
+        on = "/".join(o["kana"] + ("(" + "・".join(o["layers"]) + ")" if o["layers"] else "") + ("*" if o.get("extra") else "") for o in k["on"])
+        mc = "/".join(m["status"] + "(" + m["rhyme"] + ")" for m in k["middle_chinese"])
+        lines.append(
+            f"{k['char']}{k['jp_char']} 日{on} 粵{'/'.join(k['cantonese'])} 華{k['mandarin']} "
+            f"台文{'/'.join(h['literary'])} 白{'/'.join(h['colloquial'])} 未標{'/'.join(h['unmarked'])} 中古{mc} → {','.join(k['rules'])}"
+        )
+    lines.append("\n例外：")
     for rid, xs in exceptions.items():
         for x in xs:
-            print(f"  {rid} {x['char']}{'（部分）' if x['partial'] else ''}：{x['reason']}")
-    if warnings:
-        print("\n警告：")
-        for w in warnings:
-            print("  " + w)
+            lines.append(f"  {rid} {x['char']}{'（部分）' if x['partial'] else ''}：{x['reason']}")
+    lines.append("\n警告：")
+    lines += ["  " + w for w in warnings]
+    (RAW / "build_report.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
+    def count(pred) -> int:
+        return sum(1 for k in kanji_out if pred(k))
+
+    print(f"\n寫出 {len(kanji_out)} 字、{len(words)} 個詞")
+    print(f"  有日語音讀 {count(lambda k: k['on'])}、粵語 {count(lambda k: k['cantonese'])}、華語 {count(lambda k: k['mandarin'])}、"
+          f"台語 {count(lambda k: any(k['hokkien'].values()))}、中古音 {count(lambda k: k['middle_chinese'])}、"
+          f"讀音層次 {count(lambda k: any(o['layers'] for o in k['on']))}")
+    for r in rules_data:
+        members = count(lambda k: r["id"] in k["rules"])
+        full = sum(1 for x in r["exceptions"] if not x["partial"])
+        part = sum(1 for x in r["exceptions"] if x["partial"])
+        print(f"  {r['id']}: {members} 字，例外 {full}、部分例外 {part}")
+    print(f"  警告 {len(warnings)} 則；詳細內容見 data/build_report.txt")
 
 if __name__ == "__main__":
     main()

@@ -17,6 +17,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date
@@ -26,7 +27,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "data" / "wiktionary_readings.json"
 API = "https://en.wiktionary.org/w/api.php"
 USER_AGENT = "kanji-rules-site-data-script/0.1 (static educational site)"
-BATCH = 50  # MediaWiki API 一次最多 50 個標題
+BATCH = 20  # MediaWiki API 一次最多 50 個標題；頁面內容很大，一次 20 個比較不會被限流
+PAUSE = 3  # 每批之間休息幾秒
+RETRIES = 6
 
 # Wiktionary 欄位 → 本站的讀音層次名稱
 FIELDS = {"goon": "吳音", "kanon": "漢音", "toon": "唐音", "soon": "宋音", "kanyoon": "慣用音"}
@@ -64,8 +67,17 @@ def fetch_batch(titles: list[str]) -> dict[str, dict]:
         "titles": "|".join(titles),
     }
     req = urllib.request.Request(API + "?" + urllib.parse.urlencode(params), headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = json.load(resp)
+    for attempt in range(RETRIES):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.load(resp)
+            break
+        except urllib.error.HTTPError as err:
+            if err.code not in (429, 503) or attempt == RETRIES - 1:
+                raise
+            wait = int(err.headers.get("Retry-After") or 0) or 15 * (attempt + 1)
+            print(f"  被限流（HTTP {err.code}），{wait} 秒後重試")
+            time.sleep(wait)
     if "error" in data:
         raise RuntimeError(data["error"])
 
@@ -78,6 +90,8 @@ def fetch_batch(titles: list[str]) -> dict[str, dict]:
         if page.get("missing"):
             out[title] = {"layers": {}, "revid": None, "fetched": today}
             continue
+        if "revisions" not in page:
+            continue  # API 這次沒給內容（回應太大時會分批），留給下一輪
         rev = page["revisions"][0]
         out[title] = {
             "layers": parse_readings(rev["slots"]["main"]["content"]),
@@ -104,21 +118,32 @@ def main() -> None:
     todo = [c for c in chars if c not in cache]
     print(f"共 {len(chars)} 字，需要抓取 {len(todo)} 字")
 
-    for i in range(0, len(todo), BATCH):
-        batch = todo[i : i + BATCH]
-        cache.update(fetch_batch(batch))
-        print(f"  已抓取 {min(i + BATCH, len(todo))}/{len(todo)}")
-        time.sleep(1)  # 對 Wiktionary 客氣一點
-
     CACHE.parent.mkdir(exist_ok=True)
-    CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    done = 0
+    stall = 0
+    while todo:
+        batch, todo = todo[:BATCH], todo[BATCH:]
+        got = fetch_batch(batch)
+        cache.update(got)
+        todo += [c for c in batch if c not in got]  # 沒拿到內容的字排到後面再抓
+        done += len(got)
+        stall = 0 if got else stall + 1
+        if stall >= 3:
+            print("連續 3 批都沒拿到內容，先停止；稍後重跑會從剩下的字繼續")
+            break
+        # 每批都存檔，中斷後重跑會從還沒抓到的字繼續
+        CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print(f"  已抓取 {done}，剩 {len(todo)}")
+        time.sleep(PAUSE)  # 對 Wiktionary 客氣一點
 
-    empty = [c for c in chars if not cache[c]["layers"]]
+    empty = [c for c in chars if not cache.get(c, {}).get("layers")]
+    print(f"完成：{len(chars) - len(empty)} 字有讀音層次資料")
     if empty:
         print("沒有讀音層次資料：" + "".join(empty))
-    for c in chars:
-        layers = cache[c]["layers"]
-        print(c, "　".join(f"{k}:{'、'.join(v)}" for k, v in layers.items()))
+    if len(chars) <= 60:
+        for c in chars:
+            layers = cache[c]["layers"]
+            print(c, "　".join(f"{k}:{'、'.join(v)}" for k, v in layers.items()))
 
 
 if __name__ == "__main__":

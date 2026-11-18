@@ -44,12 +44,20 @@ interface Props {
 }
 
 /** 規律對照表：日語｜粵語｜台語，可排序，例外字以顏色標示 */
+const PAGE = 100;
+type Filter = "all" | "exc" | "ok";
+
 export default function RuleTable({ kanji, exceptions }: Props) {
   const { settings } = useSettings();
   const [sort, setSort] = useState<SortState>({ key: "char", asc: true });
+  const [filter, setFilter] = useState<Filter>("all");
+  const [shown, setShown] = useState(PAGE);
   const excByChar = new Map(exceptions.map((e) => [e.char, e]));
 
-  const rows = kanji
+  const filtered = kanji.filter((k) =>
+    filter === "all" ? true : filter === "exc" ? excByChar.has(k.char) : !excByChar.has(k.char),
+  );
+  const rows = filtered
     .map((k, i) => ({ k, v: sortValue[sort.key](k, i) }))
     .sort((a, b) => {
       const c = typeof a.v === "number" ? a.v - (b.v as number) : String(a.v).localeCompare(String(b.v), "ja");
@@ -57,7 +65,28 @@ export default function RuleTable({ kanji, exceptions }: Props) {
     })
     .map((r) => r.k);
 
+  const pill = (on: boolean) =>
+    `rounded-full border px-3 py-0.5 text-xs ${
+      on ? "border-indigo-500 bg-indigo-600 text-white dark:bg-indigo-500" : "border-stone-300 dark:border-stone-600"
+    }`;
+  const choose = (f: Filter) => {
+    setFilter(f);
+    setShown(PAGE);
+  };
+
   return (
+    <div className="space-y-2">
+    <div className="flex flex-wrap gap-1.5" role="group" aria-label="篩選">
+      <button type="button" className={pill(filter === "all")} aria-pressed={filter === "all"} onClick={() => choose("all")}>
+        全部 {kanji.length}
+      </button>
+      <button type="button" className={pill(filter === "ok")} aria-pressed={filter === "ok"} onClick={() => choose("ok")}>
+        符合規律 {kanji.length - exceptions.length}
+      </button>
+      <button type="button" className={pill(filter === "exc")} aria-pressed={filter === "exc"} onClick={() => choose("exc")}>
+        例外 {exceptions.length}
+      </button>
+    </div>
     <div className="overflow-x-auto rounded-lg border border-stone-200 dark:border-stone-700">
       <table className="w-full text-sm">
         <thead className="bg-stone-100 dark:bg-stone-800">
@@ -70,7 +99,7 @@ export default function RuleTable({ kanji, exceptions }: Props) {
           </tr>
         </thead>
         <tbody>
-          {rows.map((k) => {
+          {rows.slice(0, shown).map((k) => {
             const exc = excByChar.get(k.char);
             const tone = !exc
               ? ""
@@ -101,6 +130,16 @@ export default function RuleTable({ kanji, exceptions }: Props) {
           })}
         </tbody>
       </table>
+    </div>
+    {shown < rows.length && (
+      <button
+        type="button"
+        onClick={() => setShown((n) => n + PAGE)}
+        className="mx-auto block rounded-md border border-stone-300 px-4 py-1.5 text-sm hover:bg-stone-100 dark:border-stone-600 dark:hover:bg-stone-800"
+      >
+        顯示更多（還有 {rows.length - shown} 字）
+      </button>
+    )}
     </div>
   );
 }

@@ -16,6 +16,13 @@ npm run build    # 產生 dist/，可直接部署到 GitHub Pages 或 Vercel
 - 資料在 `src/data/*.json`，型別定義在 `src/types.ts`
 - 外部字典連結模板集中在 `src/config/dictionaries.ts`
 
+## 部署（GitHub Pages）
+
+推到 `main` 後，`.github/workflows/deploy.yml` 會自動建置並部署到 GitHub Pages。
+第一次需要到 repo 的 **Settings → Pages → Build and deployment → Source** 選「**GitHub Actions**」。
+
+網址：https://trickster-2005.github.io/Japanese-Kanji-learning/
+
 ## 目前進度
 
 - [x] 階段 1：專案骨架、路由、版面、`dictionaries.ts`、`<DictLinks>`、10 字示範資料

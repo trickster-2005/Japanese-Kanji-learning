@@ -4,6 +4,7 @@ import { getKanji, getWord } from "../../lib/data";
 import { wordTypeLabel } from "../../lib/labels";
 import { kanjiPath } from "../../lib/text";
 import DictLinks from "../DictLinks";
+import SpeakButton from "../SpeakButton";
 import { HokkienList } from "../Readings";
 
 /** 彈窗內容：詞彙 */
@@ -20,6 +21,7 @@ export default function WordInfo({ word }: { word: string }) {
         <span lang="ja" className="font-jp text-3xl">{word}</span>
         <div lang="ja" className="font-jp mt-1 text-sm text-stone-600 dark:text-stone-300">
           {w?.reading || <span className="text-stone-400">讀音待確認</span>}
+          {w?.reading && <SpeakButton text={w.reading} label={word} className="ml-1" />}
           {w && w.alt_readings.length > 0 && <span className="ml-2 text-xs text-stone-400">又讀 {w.alt_readings.join("、")}</span>}
         </div>
       </div>

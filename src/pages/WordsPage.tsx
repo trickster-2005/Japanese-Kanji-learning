@@ -8,6 +8,7 @@ import { useSettings } from "../context/useSettings";
 import { WORDS } from "../lib/data";
 import { WORD_TYPES } from "../lib/labels";
 import { toHiragana } from "../lib/romanize";
+import SpeakButton from "../components/SpeakButton";
 import type { Word, WordType } from "../types";
 
 const PAGE = 60;
@@ -24,6 +25,7 @@ function WordCard({ w }: { w: Word }) {
         <span lang="ja" className="font-jp text-stone-600 dark:text-stone-300">
           {w.reading || <span className="text-stone-400">讀音待確認</span>}
         </span>
+        {w.reading && <SpeakButton text={w.reading} label={w.word} className="self-center" />}
         {w.alt_readings.length > 0 && (
           <span lang="ja" className="font-jp text-xs text-stone-400">又讀 {w.alt_readings.join("、")}</span>
         )}

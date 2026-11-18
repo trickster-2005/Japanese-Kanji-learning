@@ -5,6 +5,7 @@ import RuleTable from "../components/RuleTable";
 import SeenButton from "../components/SeenButton";
 import { WORDS, getRule, kanjiByRule } from "../lib/data";
 import NotFoundPage from "./NotFoundPage";
+import SpeakButton from "../components/SpeakButton";
 
 export default function RuleDetailPage() {
   const { id = "" } = useParams();
@@ -55,6 +56,7 @@ export default function RuleDetailPage() {
                   <span lang="ja" className="font-jp ml-3 text-sm text-stone-500">
                     {info?.reading || "讀音待確認"}
                   </span>
+                  {info?.reading && <SpeakButton text={info.reading} label={w} className="ml-1" />}
                   <div className="mt-2"><DictLinks q={w} type="word" /></div>
                 </li>
               );

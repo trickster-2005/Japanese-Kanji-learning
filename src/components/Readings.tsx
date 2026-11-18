@@ -1,4 +1,5 @@
 import type { HokkienReadings, OnReading } from "../types";
+import SpeakButton from "./SpeakButton";
 
 const MISSING = <span className="text-stone-400">待確認</span>;
 
@@ -29,6 +30,7 @@ export function OnList({ on, bad = [], detailed = false }: { on: OnReading[]; ba
             >
               {o.kana}
             </span>
+            {detailed && <SpeakButton text={o.kana} className="ml-0.5" />}
             <sub className="ml-0.5 text-[10px] text-stone-500 dark:text-stone-400">
               {o.layers.length
                 ? o.layers.map((l) => (detailed ? l : LAYER_SHORT[l] ?? l)).join("・")

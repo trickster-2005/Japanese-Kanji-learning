@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { WordText } from "../components/Clickable";
 import DictLinks from "../components/DictLinks";
 import { OnList } from "../components/Readings";
+import SpeakButton from "../components/SpeakButton";
 import SourceList from "../components/SourceList";
 import SeenButton from "../components/SeenButton";
 import { useSettings } from "../context/useSettings";
@@ -160,6 +161,7 @@ export default function KanjiPage() {
                   <div className="flex flex-wrap items-baseline gap-x-3">
                     <WordText w={w} className="text-xl" />
                     <span lang="ja" className="font-jp text-sm text-stone-500">{info?.reading || "讀音待確認"}</span>
+                    {info?.reading && <SpeakButton text={info.reading} label={w} className="self-center" />}
                     {info && <span className="text-sm">{info.meaning_zh}</span>}
                   </div>
                   <div className="mt-2"><DictLinks q={w} type="word" /></div>

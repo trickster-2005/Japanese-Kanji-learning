@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { WordText } from "../components/Clickable";
 import JpText from "../components/JpText";
 import KanjiLink from "../components/KanjiLink";
+import SpeakButton from "../components/SpeakButton";
 import { WORDS, getKanji } from "../lib/data";
 import { isKanji } from "../lib/text";
 
@@ -64,7 +65,13 @@ export default function ReaderPage() {
         <button type="button" onClick={() => setText(SAMPLE)} className="rounded border border-stone-300 px-3 py-1 dark:border-stone-600">
           範例文字
         </button>
+        <SpeakButton text={text} label="全文">朗讀全文</SpeakButton>
       </div>
+      {text.trim() && (
+        <p className="text-xs text-stone-500">
+          「朗讀全文」用的是裝置內建的語音合成，漢字讀法由裝置自行判斷，可能念錯；個別詞彙旁的喇叭念的是資料中的讀音。
+        </p>
+      )}
 
       {text.trim() && (
         <>
@@ -80,6 +87,7 @@ export default function ReaderPage() {
                   <span key={w.word}>
                     <WordText w={w.word} className="text-lg" />
                     <span lang="ja" className="font-jp ml-1 text-xs text-stone-500">{w.reading}</span>
+                    {w.reading && <SpeakButton text={w.reading} label={w.word} />}
                   </span>
                 ))}
               </div>

@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-import { usePopup } from "../../context/popupContext";
 import { useSettings } from "../../context/useSettings";
 import { getKanji, getWord } from "../../lib/data";
 import { wordTypeLabel } from "../../lib/labels";
+import { kanjiPath } from "../../lib/text";
 import DictLinks from "../DictLinks";
 import { HokkienList } from "../Readings";
 
 /** 彈窗內容：詞彙 */
 export default function WordInfo({ word }: { word: string }) {
   const { settings } = useSettings();
-  const { show } = usePopup();
   const w = getWord(word);
   const chars = [...word].filter((c) => /\p{Script=Han}/u.test(c));
 
@@ -50,16 +49,15 @@ export default function WordInfo({ word }: { word: string }) {
       {chars.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
           {chars.map((c, i) => (
-            <button
+            <Link
               key={c + i}
-              type="button"
+              to={kanjiPath(c)}
               lang="ja"
-              onClick={() => show({ kind: "kanji", char: c })}
               className="font-jp rounded border border-stone-200 px-2 py-0.5 text-lg hover:border-indigo-400 dark:border-stone-600"
               title={getKanji(c) ? "看這個字" : "資料中尚未收錄"}
             >
               {c}
-            </button>
+            </Link>
           ))}
         </div>
       )}

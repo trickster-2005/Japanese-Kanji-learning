@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 import { PopupContext, type PopupTarget } from "../../context/popupContext";
-import KanjiInfo from "./KanjiInfo";
 import WordInfo from "./WordInfo";
 
 interface OpenState {
@@ -15,7 +14,7 @@ const WIDTH = 320;
 const GAP = 6;
 const MOBILE = 640;
 
-/** 全站點擊彈窗：桌機貼在被點的字旁邊，手機從底部滑出 */
+/** 詞彙點擊彈窗：桌機貼在被點的詞旁邊，手機從底部滑出 */
 export default function PopupProvider({ children }: { children: ReactNode }) {
   const location = useLocation();
   const [state, setState] = useState<OpenState | null>(null);
@@ -40,8 +39,6 @@ export default function PopupProvider({ children }: { children: ReactNode }) {
     (target: PopupTarget, anchor: HTMLElement) => setState({ target, anchor, locationKey: where }),
     [where],
   );
-
-  const show = useCallback((target: PopupTarget) => setState((s) => (s ? { ...s, target } : s)), []);
 
   // 定位：先畫出來量高度，再決定放在下方或上方
   const place = useCallback(() => {
@@ -81,7 +78,7 @@ export default function PopupProvider({ children }: { children: ReactNode }) {
     };
   }, [current, close, place]);
 
-  const value = useMemo(() => ({ open, show, close }), [open, show, close]);
+  const value = useMemo(() => ({ open, close }), [open, close]);
 
   return (
     <PopupContext.Provider value={value}>
@@ -90,7 +87,7 @@ export default function PopupProvider({ children }: { children: ReactNode }) {
         <div
           ref={boxRef}
           role="dialog"
-          aria-label="漢字資訊"
+          aria-label="詞彙資訊"
           tabIndex={-1}
           style={mobile ? undefined : { top: pos?.top ?? -9999, left: pos?.left ?? 0, width: WIDTH }}
           className={`fixed z-50 overflow-y-auto border border-stone-200 bg-white text-stone-900 shadow-xl outline-none dark:border-stone-600 dark:bg-stone-800 dark:text-stone-100 ${
@@ -105,11 +102,7 @@ export default function PopupProvider({ children }: { children: ReactNode }) {
           >
             ×
           </button>
-          {current.target.kind === "kanji" ? (
-            <KanjiInfo char={current.target.char} />
-          ) : (
-            <WordInfo word={current.target.word} />
-          )}
+          <WordInfo word={current.target.word} />
         </div>
       )}
     </PopupContext.Provider>

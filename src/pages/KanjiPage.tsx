@@ -7,6 +7,7 @@ import SourceList from "../components/SourceList";
 import SeenButton from "../components/SeenButton";
 import { useSettings } from "../context/useSettings";
 import { SERIES, getKanji, getRule, getWord } from "../lib/data";
+import { isKanji } from "../lib/text";
 import NotFoundPage from "./NotFoundPage";
 
 const EMPTY = <span className="text-stone-400">待確認</span>;
@@ -26,7 +27,17 @@ export default function KanjiPage() {
   const { char = "" } = useParams();
   const { settings } = useSettings();
   const k = getKanji(char);
-  if (!k) return <NotFoundPage what={`「${char}」`} />;
+  if (!k) {
+    if (!isKanji(char)) return <NotFoundPage what={`「${char}」`} />;
+    // 不在常用漢字裡的字：沒有資料，但仍提供字典連結
+    return (
+      <article className="space-y-4">
+        <span lang="ja" className="font-jp text-6xl">{char}</span>
+        <p className="text-stone-600 dark:text-stone-300">這個字不在常用漢字裡，資料中還沒收錄。可以先查字典：</p>
+        <DictLinks q={char} type="kanji" zh={char} />
+      </article>
+    );
+  }
 
   const series = SERIES.find((s) => s.phonetic === k.phonetic_series);
   const ruleExc = (id: string) => getRule(id)?.exceptions.find((e) => e.char === k.char);

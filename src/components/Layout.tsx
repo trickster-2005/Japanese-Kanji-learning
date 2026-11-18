@@ -1,8 +1,15 @@
-import { Link, Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { KANJI, WORDS } from "../lib/data";
 import Header from "./Header";
 
 export default function Layout() {
+  // 換頁時回到頁面頂端（例如從長表格點進單字頁）
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className="flex min-h-screen flex-col">
       <Header />

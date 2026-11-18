@@ -4,6 +4,7 @@ import type { DictLookupType, JpDict, OtherDict } from "../types";
 // 日語字典一律用日本新字體（jp_char）查詢；粵語、台語字典用繁體字查詢。
 
 export const JP_DICTS: JpDict[] = [
+  { id: "japandict",  name: "JapanDict",  kanji: "https://www.japandict.com/kanji/{q}",   word: "https://www.japandict.com/?s={q}" },
   { id: "jisho",      name: "Jisho",      kanji: "https://jisho.org/search/{q}%20%23kanji", word: "https://jisho.org/search/{q}" },
   { id: "weblio",     name: "Weblio",     kanji: "https://www.weblio.jp/content/{q}",       word: "https://www.weblio.jp/content/{q}" },
   { id: "kotobank",   name: "コトバンク", kanji: "https://kotobank.jp/search?q={q}",        word: "https://kotobank.jp/search?q={q}" },

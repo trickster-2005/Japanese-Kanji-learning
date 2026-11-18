@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { loadJSON, saveJSON } from "../lib/storage";
 import type { Settings } from "../types";
-import { DEFAULT_SETTINGS, SETTINGS_KEY, SettingsContext } from "./settingsContext";
+import { DEFAULT_SETTINGS, SETTINGS_KEY, SettingsContext, migrateSettings } from "./settingsContext";
 
 export default function SettingsProvider({ children }: { children: ReactNode }) {
+  // 存下來的設定沒有 version 就當作 v1，交給 migrateSettings 處理
   const [settings, setSettings] = useState<Settings>(() =>
-    loadJSON(SETTINGS_KEY, DEFAULT_SETTINGS),
+    migrateSettings(loadJSON(SETTINGS_KEY, { ...DEFAULT_SETTINGS, version: undefined })),
   );
 
   useEffect(() => {

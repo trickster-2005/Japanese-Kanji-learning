@@ -161,6 +161,8 @@ export interface Settings {
   showHokkien: boolean;
   darkMode: boolean;
   defaultDict: string;
+  /** 設定格式版本，用來做一次性的遷移 */
+  version?: number;
   /** 「已看過」書籤：只做標記，不計分 */
   seen: string[];
 }

@@ -160,6 +160,8 @@ export interface Settings {
   showCantonese: boolean;
   showHokkien: boolean;
   darkMode: boolean;
+  /** 顯示朗讀（TTS）按鈕 */
+  showTts: boolean;
   defaultDict: string;
   /** 設定格式版本，用來做一次性的遷移 */
   version?: number;

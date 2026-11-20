@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { WordText } from "../components/Clickable";
 import JpText from "../components/JpText";
 import KanjiLink from "../components/KanjiLink";
+import { useSettings } from "../context/useSettings";
 import SpeakButton from "../components/SpeakButton";
 import { WORDS, getKanji } from "../lib/data";
 import { isKanji } from "../lib/text";
@@ -18,6 +19,7 @@ function loadText(): string {
 }
 
 export default function ReaderPage() {
+  const { settings } = useSettings();
   const [text, setText] = useState(loadText);
 
   useEffect(() => {
@@ -67,7 +69,7 @@ export default function ReaderPage() {
         </button>
         <SpeakButton text={text} label="全文">朗讀全文</SpeakButton>
       </div>
-      {text.trim() && (
+      {settings.showTts && text.trim() && (
         <p className="text-xs text-stone-500">
           「朗讀全文」用的是裝置內建的語音合成，漢字讀法由裝置自行判斷，可能念錯；個別詞彙旁的喇叭念的是資料中的讀音。
         </p>

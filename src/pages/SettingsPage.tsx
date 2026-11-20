@@ -46,6 +46,7 @@ export default function SettingsPage() {
         <Check checked={settings.showCantonese} onChange={(v) => update({ showCantonese: v })} label="顯示粵語" />
         <Check checked={settings.showHokkien} onChange={(v) => update({ showHokkien: v })} label="顯示台語" />
         <Check checked={settings.darkMode} onChange={(v) => update({ darkMode: v })} label="深色模式" />
+        <Check checked={settings.showTts} onChange={(v) => update({ showTts: v })} label="顯示朗讀按鈕（喇叭）" />
       </section>
 
       <section id="sources" className="scroll-mt-24 space-y-2">

@@ -9,6 +9,7 @@ export const DEFAULT_SETTINGS: Settings = {
   showCantonese: true,
   showHokkien: true,
   darkMode: false,
+  showTts: true,
   defaultDict: DEFAULT_DICT_ID,
   version: SETTINGS_VERSION,
   seen: [],

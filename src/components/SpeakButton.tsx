@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useSettings } from "../context/useSettings";
 import { getVoiceState, speakJa, stopSpeaking, subscribeVoices } from "../lib/speech";
 
 const NO_VOICE = "這台裝置沒有日語語音，可在系統設定加裝日語語音後再試";
@@ -18,6 +19,7 @@ export default function SpeakButton({
   className?: string;
   children?: React.ReactNode;
 }) {
+  const { settings } = useSettings();
   const voice = useSyncExternalStore(subscribeVoices, getVoiceState, getVoiceState);
   const [speaking, setSpeaking] = useState(false);
   const mine = useRef<SpeechSynthesisUtterance | null>(null);
@@ -30,7 +32,7 @@ export default function SpeakButton({
     [],
   );
 
-  if (voice.status === "unsupported" || !text.trim()) return null;
+  if (!settings.showTts || voice.status === "unsupported" || !text.trim()) return null;
   const disabled = voice.status === "none";
   const what = label ?? text;
 
